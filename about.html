@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>i Fit - About</title>
+    <link rel="stylesheet" href="css.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../i Fit/images/i-fit-logo-for-white-bg.png"
+    />
+    <style>
+      .about-1 {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: space-evenly;
+        color: var(--text);
+        align-items: center;
+        font-size: clamp(0.6rem, 2vw, 1.2rem);
+      }
+
+      .about-1 h1 {
+        animation: slide 1s ease-in-out;
+      }
+
+      .about-1 .bg {
+        flex-wrap: wrap;
+        animation: appearFade 1s ease-in-out;
+      }
+
+      .about-1 .bg p {
+        font-size: clamp(0.7rem, 2vw, 1.2rem);
+      }
+
+      .about-1 img {
+        width: 35rem;
+      }
+
+      .bg {
+        justify-content: space-evenly;
+        display: flex;
+      }
+
+      .about-1 img {
+        animation: fade-appear;
+      }
+
+      .break-line {
+        color: var(--accent);
+        border: 2px solid;
+        margin: 1.5rem 0;
+        animation: slide 0.6s ease-in-out;
+      }
+
+      /* section 2 */
+      .about-2 {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        color: var(--text);
+        font-size: clamp(0.4rem, 2vw, 1.2rem);
+      }
+
+      .tools h2 {
+        margin: 1rem 0;
+        text-align: center;
+      }
+
+      .tools {
+        overflow: hidden;
+        padding: 20px 0;
+        background-color: rgba(149, 171, 198, 0.2);
+        white-space: nowrap;
+      }
+
+      .tools-slide {
+        display: inline-flex;
+        animation: 6s sliding infinite linear;
+      }
+
+      .tools-slide div {
+        margin: 0 8rem;
+      }
+
+      .tools img {
+        width: 5rem;
+        height: 5rem;
+      }
+
+      .tools p {
+        text-align: center;
+      }
+
+      .tools:hover .tools-slide {
+        animation-play-state: paused;
+      }
+
+      .tools img:hover {
+        transform: scale(1.2);
+      }
+
+      @keyframes sliding {
+        from {
+          transform: translateX(0);
+        }
+
+        to {
+          transform: translateX(-100%);
+        }
+      }
+
+      /* .tools {
+        background-color: rgba(149, 171, 198, 0.2);
+        padding: 1rem; STAND BY MUNA YAN FOR REFERENCE
+      } */
+
+      .members {
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      .members h2 {
+        margin: 5rem 0;
+        text-align: center;
+      }
+
+      .members p {
+        font-size: clamp(0.7rem, 2vw, 1.2rem);
+      }
+      .ron-image {
+        color: var(--accent);
+        border: 1px solid var(--text);
+        border-radius: 1rem;
+        box-shadow: 20px 15px 15px rgba(0, 0, 0, 0.2);
+        width: 11rem;
+        height: 15rem;
+      }
+
+      .contact h2 {
+        margin: 5rem 0;
+      }
+
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        max-width: 400px;
+        width: 100%;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 0.8rem;
+        border: 1px solid var(--text);
+        border-radius: 0.5rem;
+        background-color: var(--background);
+        color: var(--text);
+        font-size: clamp(0.7rem, 2vw, 1.2rem);
+        box-shadow: 20px 15px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .contact-form button {
+        padding: 0.8rem;
+        background-color: var(--accent);
+        color: var(--text);
+        border: none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        box-shadow: 20px 15px 15px rgba(0, 0, 0, 0.2);
+        transition: background 0.3s ease-in-out;
+      }
+
+      .contact-form button:hover {
+        background-color: darken(var(--accent), 50%);
+      }
+
+      .icons-member {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .icons-member img {
+        margin: 0 1rem;
+        width: 2rem;
+        height: 1.7rem;
+      }
+
+      .icons-member p {
+        text-decoration: underline;
+        font-size: 1.5rem;
+        margin: 0.5rem 0;
+      }
+
+      @media (max-width: 1240px) {
+        .about-1 img {
+          width: 20rem;
+          max-width: 100%;
+        }
+
+        .about-2 .tools img {
+          width: 2rem;
+          height: 2rem;
+        }
+
+        .tools-slide div {
+          margin: 0 5rem;
+        }
+
+        .icons-member img {
+          margin: 0 1rem;
+          width: 1.5rem;
+          height: 1.2rem;
+        }
+
+        .icons-member p {
+          font-size: 1rem;
+        }
+
+        .ron-image {
+          width: 8rem;
+          height: 12rem;
+        }
+      }
+
+      @media (max-width: 575px) {
+        footer {
+          margin-top: 15rem;
+        }
+
+        .icons-member img {
+          margin: 0 1rem;
+          width: 1rem;
+          height: 1rem;
+        }
+
+        .icons-member p {
+          font-size: 0.7rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div>
+          <a href="index.html"
+            ><img
+              src="../i Fit/images/i-fit-logo-for-white-bg.png"
+              alt="Logo"
+              class="logo-image"
+              data-light="../i Fit/images/i-fit-logo-for-white-bg.png"
+              data-dark="../i Fit/images/i-fit-logo-for-dark-bg.png"
+          /></a>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="#section-2">Exercises</a></li>
+          <li><a href="#section-3">Nutrition Guide</a></li>
+          <li><a href="bmi.html">BMI Calculator</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <ul>
+          <li class="dark-mode">
+            <button>
+              <img
+                src="../i Fit/images/moon-fill.png"
+                alt="moon"
+                class="dark-mode"
+                theme-moon="../i Fit/images/moon-fill.png"
+                theme-sun="../i Fit/images/sun-line.png"
+              />
+            </button>
+          </li>
+        </ul>
+        <!-- ito yung mobile nav bar -->
+
+        <ul class="nav-links-mobile">
+          <li>
+            <a href="index.html">Exercises ></a>
+          </li>
+          <li>
+            <a href="index.html">Nutrition Guide ></a>
+          </li>
+          <li>
+            <a href="bmi.html">BMI Calculator ></a>
+          </li>
+          <li>
+            <a href="#">About ></a>
+          </li>
+          <li class="dark-mode-mobile">
+            <button><strong>Dark Mode</strong></button>
+          </li>
+        </ul>
+        <button class="menu-toggle" type="">
+          <img
+            src="../i Fit/images/menu-line.png"
+            alt="menu"
+            menu-line="../i Fit/images/menu-line.png"
+            menu-line-dark="../i Fit/images/menu-line-dark.png"
+          />
+        </button>
+      </nav>
+    </header>
+
+    <!-- section 1 -->
+    <div class="about-1">
+      <div class="shapes shape-1"></div>
+      <div class="shapes shape-2"></div>
+      <div class="shapes shape-3"></div>
+      <div class="shapes shape-4"></div>
+      <div class="shapes shape-5"></div>
+      <div class="shapes shape-6"></div>
+      <div class="shapes shape-7"></div>
+      <div class="shapes shape-8"></div>
+      <div class="shapes shape-9"></div>
+
+      <div class="bg">
+        <div class="welcome-message">
+          <h1>Who we are</h1>
+          <div class="break-line"></div>
+          <p>
+            <span style="color: var(--accent)"><strong>I FIT</strong></span> is
+            a website that is designed to kickstart your fitness journey.
+            <span style="color: var(--accent)"><strong>We</strong></span> offer
+            comprehensive <ins>exercise guides</ins>, <ins>nutrition tips</ins>,
+            and <ins>expert recommendations</ins>
+            to help you reach your fitness goals effectively.
+          </p>
+        </div>
+        <img src="../i Fit/images/happy-people.png" alt="" />
+      </div>
+    </div>
+    <!-- section 2 -->
+    <div class="about-2">
+      <div class="tools">
+        <h2>Tools I used:</h2>
+        <div class="tools-slide">
+          <div>
+            <img src="../i Fit/images/html5-fill.png" alt="html" />
+            <p>HTML</p>
+          </div>
+
+          <div>
+            <img src="../i Fit/images/css3-fill.png" alt="html" />
+            <p>CSS</p>
+          </div>
+
+          <div>
+            <img src="../i Fit/images/javascript-fill.png" alt="JavaScript" />
+            <p>JavaScript</p>
+          </div>
+
+          <div>
+            <img src="../i Fit/images/vscode-fill.png" alt="vscdode" />
+            <p>VS Code</p>
+          </div>
+
+          <div>
+            <img src="../i Fit/images/icons8-fill.png" alt="icons8" />
+            <p>icons8</p>
+          </div>
+        </div>
+        <div class="tools-slide">
+          <div>
+            <img src="../i Fit/images/html5-fill.png" alt="html" />
+            <p>HTML</p>
+          </div>
+
+          <div>
+            <img src="../i Fit/images/css3-fill.png" alt="html" />
+            <p>CSS</p>
+          </div>
+
+          <div>
+            <img src="../i Fit/images/javascript-fill.png" alt="JavaScript" />
+            <p>JavaScript</p>
+          </div>
+
+          <div>
+            <img src="../i Fit/images/vscode-fill.png" alt="vscdode" />
+            <p>VS Code</p>
+          </div>
+
+          <div>
+            <img src="../i Fit/images/icons8-fill.png" alt="icons8" />
+            <p>icons8</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="members" id="members">
+        <div>
+          <h2>Creator:</h2>
+          <img src="../i Fit/images/ron-fill.png" alt="ron" class="ron-image" />
+          <p>Rabaya, Ron Arjie E.</p>
+        </div>
+        <div>
+          <h2>Email Me:</h2>
+          <form
+            action="mailto:roes.rabaya.up@phinmaed.com"
+            method="post"
+            enctype="text/plain"
+            class="contact-form"
+          >
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+        <div class="icons-member">
+          <h2>Social Media:</h2>
+          <p>
+            <a href="https://www.youtube.com/@aenoplays"
+            target="_blank"
+              ><img
+                src="../i Fit/images/youtube-fill.png"
+                alt="youtube icon" />Aeno</a
+                >
+          </p>
+          <p>
+            <a href="https://www.instagram.com/ayno.ai/"
+            target="_blank"
+              ><img
+                src="../i Fit/images/instagram-line.png"
+                alt="instagram icon" />@ayno.ai</a
+                >
+          </p>
+          <p>
+            <a href="https://www.tiktok.com/@aeno.ai"
+            target="_blank"
+              ><img src="../i Fit/images/tiktok-fill.png" alt="tiktok" />@aeno.ai</a
+              >
+          </p>
+          <p>
+            <a href="https://www.facebook.com/aenoNotFound"
+            target="_blank"
+              ><img
+                src="../i Fit/images/facebook-icon.png"
+                alt="facebook icon" />Ron Arjie Esperon Rabaya</a>
+          </p>
+          <p>
+            <a href="#"
+            target="_blank"
+              ><img
+                src="../i Fit/images/twitter-icon.png"
+                alt="twitter icon" />Aenotics</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- footer  -->
+    <footer>
+      <div class="logo">
+        <a href="index.html"><img src="../i Fit/images/i-fit-logo-for-white-bg.png" alt="logo" class="logo-image"></a>
+        <div class="icons">
+          <p>Follow us on our social media:</p>
+          <a href="https://www.youtube.com/@aenoplays" target="_blank">
+            <img src="../i Fit/images/youtube-accent.png" alt="youtube icon">
+          </a>
+          <a href="https://www.instagram.com/ayno.ai/" target="_blank">
+            <img src="../i Fit/images/instagram-accent.png" alt="instagram icon">
+          </a>
+          <a href="https://www.tiktok.com/@aeno.ai" target="_blank">
+            <img src="../i Fit/images/tiktok-accent.png" alt="tiktok">
+          </a>
+          <a href="https://www.facebook.com/aenoNotFound" target="_blank">
+            <img src="../i Fit/images/facebook-accent.png" alt="facebook icon">
+          </a>
+          <a href="#" target="_blank">
+            <img src="../i Fit/images/x-accent.png" alt="twitter icon">
+          </a>
+        </div>
+      </div>
+
+      <div class="links">
+        <div class="quick-links">
+          <h1>Quick Links</h1>
+        <ul>
+          <li><a href="#section-2">Exercises</a></li>
+          <li><a href="#section-3">Nutrition Guide</a></li>
+          <li><a href="bmi.html">BMI Calculator</a></li>
+          <li><a href="">About</a></li>
+        </ul>
+        </div>
+        <div class="help">
+          <h1>Help</h1>
+          <ul>
+            <li><a href="#">911</a></li>
+          </ul>
+        </div>
+        <div class="contacts">
+          <h1>Contact Us</h1>
+        <ul>
+          <li><img src="../i Fit/images/chat-1-fill.png" alt="phone"><a href="about.html #members">Message us</a></li>
+          <li><img src="../i Fit/images/phone-fill.png" alt="phone">+63 927 146 2168</li>
+          <li><img src="../i Fit/images/mail-line.png" alt="email">roes.rabaya.up@phinmaed.com</li>
+        </ul>
+        </div>
+      </div>
+      <div class="credits">
+        <div>
+          <p>&copy; 2025 i Fit. All rights reserved.</p>
+        </div>
+        <div>
+          <p>Made by Ron Arjie Esperon Rabaya</p>
+          <p>UP-FBS2-BSIT1-02</p>
+        </div>
+      </div>
+
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
