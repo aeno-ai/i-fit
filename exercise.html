@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>i Fit - BMI Calculator</title>
+    <title>i Fit - Exercise Library</title>
     <link rel="stylesheet" href="css.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Poppins"
@@ -12,6 +12,119 @@
     <link rel="icon" type="image/png" href="../i Fit/images/i-fit-logo-for-white-bg.png">
     <style>
       
+      nav {
+        position: static;
+      }
+      .exercise-1 {
+        height: 40vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        overflow: hidden;
+      }
+
+      .background-image {
+        background-image: url('images/gym-wallpaper.jpg');
+        background-size: cover;
+        background-position: center;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+      }
+
+      .header-content {
+        background-color: rgba(79, 92, 131, 0.5);
+        padding: 2.5rem;
+        font-size: clamp(0.5rem, 2vw, 1.2rem);
+        z-index: 2;
+        color: white;
+        border-radius: 1rem;
+        animation: slide2 .8s ease-in-out;
+      }
+   
+      .below-header-content {
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        align-items: center;
+        color: #FFFFFF;
+        background-color: var(--secondary);
+        width: 100%;
+        font-size: clamp(0.5rem, 2vw, 1.2rem);
+        animation: slide 1s ease-in-out;
+      }
+
+      .below-header-content p {
+        padding: 1rem;
+        animation: slide 1.5s ease-in-out;
+      }
+
+      .selection-header {
+        color: var(--text);
+        padding: 2rem;
+        text-align: center;
+        font-size: clamp(0.5rem, 2vw, 1.2rem);
+      }
+
+      .selection-header p{
+        text-align: center;
+
+      }
+
+      
+      .selection {
+        font-size: clamp(0.7rem, 2vw, 1.2rem);
+        color: var(--text);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 5rem;
+        flex-wrap: wrap;
+        position: relative;
+      }
+
+      .selection img {
+        border: 1px solid var(--text);
+        border-radius: .5rem;
+        width: 15rem;
+        height: auto;
+        width: clamp(9rem, 20vw, 17rem);
+        transition: .2s ease-in;
+      }
+
+      .selection img:hover {
+        transform: scale(1.1) translateY(-1.5rem);
+        
+      }
+
+      .message-us {
+        margin: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+      }
+
+      .message-us p {
+        color: var(--text);
+      }
+
+      .message-us button {
+        cursor: pointer;
+        padding: 1rem;
+        border: 2px solid var(--text);
+        border-radius: 1rem;
+        font-size: 1rem;
+      }
+
+      .message-us button:hover {
+        background-color: var(--secondary);
+      }
     </style>
   </head>
 
@@ -30,9 +143,9 @@
         </div>
 
         <ul class="nav-links">
-          <li><a href="#section-2">Exercises</a></li>
-          <li><a href="#section-3">Nutrition Guide</a></li>
-          <li><a href="#">BMI Calculator</a></li>
+          <li><a href="index.html #section-2">Exercises</a></li>
+          <li><a href="index.html #section-3">Nutrition Guide</a></li>
+          <li><a href="bmi.html">BMI Calculator</a></li>
           <li><a href="about.html">About</a></li>
         </ul>
         <ul>
@@ -52,16 +165,16 @@
 
         <ul class="nav-links-mobile">
           <li>
-            <a href="index.html">Exercises ></a>
+            <a href="index.html #section-2">Exercises ></a>
           </li>
           <li>
-            <a href="index.html">Nutrition Guide ></a>
+            <a href="index.html #section-3">Nutrition Guide ></a>
           </li>
           <li>
             <a href="bmi.html">BMI Calculator ></a>
           </li>
           <li>
-            <a href="#">About ></a>
+            <a href="about.html">About ></a>
           </li>
           <li class="dark-mode-mobile">
             <button><strong>Dark Mode</strong></button>
@@ -79,17 +192,156 @@
     </header>
 
     <!-- section 1 -->
-    <div class="section-1" id="section-1">
+    <div class="sections exercise-1" id="exercise-1">
       <!-- shapes ng section 1 -->
+
+      <div class="background-image"></div>
+      <div class="header-content">
+        <h1>Welcome to our Exercise Library</h1>
+        <p>Where you can explore and find your needs!</p>
+      </div>  
+    </div>
+
+    <div class="below-header-content">
+      <p>Different Muscle Groups</p>
+      <p>Watch Videos</p>
+      <p>Recommended Exercises</p>
+    </div>
+    <div class="sections selection-header">
+      <h1 style="color: var(--accent);">Choose your exercise by muscle group</h1>
+      <p>Click the muscle group you want to target and choose your favorite exercise</p>
+    </div>
+    <div class="selection">
       <div class="shapes shape-1"></div>
       <div class="shapes shape-2"></div>
       <div class="shapes shape-3"></div>
       <div class="shapes shape-4"></div>
       <div class="shapes shape-5"></div>
-        <h2>Exercises</h2>
-
-        
+      <div>
+        <a href="neck.html">
+          <img src="../i Fit/images/muscles/neck.jpg" alt="neck image">
+          <p>Neck</p>
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <img src="../i Fit/images/muscles/abs.jpg" alt="abs image">
+          <p>Abdominals</p>
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <img src="../i Fit/images/muscles/biceps.jpg" alt="biceps image">
+          <p>Biceps</p>
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <img src="../i Fit/images/muscles/calves.webp" alt="calves image">
+          <p>Calves</p>
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <img src="../i Fit/images/muscles/chest.jpg" alt="chest image">
+          <p>Chest</p>
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <img src="../i Fit/images/muscles/forearms.jpg" alt="forearms image">
+          <p>Forearms</p>
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <img src="../i Fit/images/muscles/glutes.jpg" alt="glutes image">
+          <p>Glutes</p>
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <img src="../i Fit/images/muscles/hamstrings.jpg" alt="hamstrings image">
+          <p>Hamstrings</p>
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <img src="../i Fit/images/muscles/lats.jpg" alt="lats image">
+          <p>Lats</p>
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <img src="../i Fit/images/muscles/lowerback.jpg" alt="lower back image">
+          <p>Lower Back</p>
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <img src="../i Fit/images/muscles/upperback.jpg" alt="upper back image">
+          <p>Upper Back</p>
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <img src="../i Fit/images/muscles/obliques.jpg" alt="obliques image">
+          <p>Obliques</p>
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <img src="../i Fit/images/muscles/quads.jpg" alt="quads image">
+          <p>Quads</p>
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <img src="../i Fit/images/muscles/shoulder.jpg" alt="shoulders image">
+          <p>Shoulders</p>
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <img src="../i Fit/images/muscles/traps.jpg" alt="traps image">
+          <p>Traps</p>
+        </a>
+      </div>
+      <div>
+        <a href="#">
+          <img src="../i Fit/images/muscles/triceps.jpg" alt="triceps image">
+          <p>Triceps</p>
+        </a>
+      </div>
     </div>
+    <div class="sections message-us">
+      <h1 style="color: var(--accent);">Workout Advice</h1>
+      <div><a href="about.html #members"><button>Message us</button></a></div>
+    </div>
+a    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- footer  -->
     <footer>
       <div class="logo">
@@ -118,22 +370,22 @@
         <div class="quick-links">
           <h1>Quick Links</h1>
         <ul>
-          <li><a href="#section-2">Exercises</a></li>
-          <li><a href="#section-3">Nutrition Guide</a></li>
+          <li><a href="index.html #section-2">Exercises</a></li>
+          <li><a href="index.html #section-3">Nutrition Guide</a></li>
           <li><a href="bmi.html">BMI Calculator</a></li>
-          <li><a href="">About</a></li>
+          <li><a href="about.html">About</a></li>
         </ul>
         </div>
         <div class="help">
           <h1>Help</h1>
           <ul>
-            
             <li><a href="#">911</a></li>
           </ul>
         </div>
         <div class="contacts">
           <h1>Contact Us</h1>
         <ul>
+          <li><img src="../i Fit/images/chat-1-fill.png" alt="phone"><a href="about.html #members">Message us</a></li>
           <li><img src="../i Fit/images/phone-fill.png" alt="phone">+63 927 146 2168</li>
           <li><img src="../i Fit/images/mail-line.png" alt="email">roes.rabaya.up@phinmaed.com</li>
         </ul>

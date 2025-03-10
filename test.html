@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background with Text</title>
+  <link rel="stylesheet" href="css.css">
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Container */
+    .hero-section {
+      position: relative;
+      width: 100%;
+      height: 30vh; /* or whatever height you need */
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: black;
+    }
+
+    /* Background */
+    .hero-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('images/gym-wallpaper.jpg'); /* Replace with your image */
+      background-size: cover;
+      background-position: center;
+      z-index: 1;
+      opacity: 0.8; /* optional: make it slightly transparent for readability */
+    }
+
+    /* Content */
+    .hero-content {
+      position: relative; /* so it sits above the background */
+      z-index: 2;
+      text-align: center;
+    }
+
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+
+    .hero-content p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero-section">
+    <div class="hero-background"></div>
+    
+    <div class="hero-content">
+      <h1>Welcome to i Fit</h1>
+      <p>Your journey starts here</p>dasdasdasdasdasdsadsasad
+    </div>
+  </section>
+
+</body>
+</html>

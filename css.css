@@ -54,7 +54,7 @@ nav {
   width: 100%;
   background-color: var(--background);
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   font-size: 1.2rem;
 }
 
@@ -935,7 +935,7 @@ footer .contacts img {
 
 /* animation */
 
-.section-1, .section-2, .section-3, .section-4, .about-1, .about-2, .about-2 .members {
+.sections {
   animation: appear 1.5s linear;
   animation-timeline: view();
   animation-range: entry 0% cover 25%;
@@ -943,7 +943,7 @@ footer .contacts img {
 /* appear kapag mag scroll */
 @keyframes appear { 
   from {
-    transform: scale(0.6);
+    transform: scale(0.4);
     opacity: 0;
   }
 
@@ -957,6 +957,18 @@ footer .contacts img {
 @keyframes slide {
   from {
     transform: translateX(-20rem);
+    opacity: 0.5;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide2 {
+  from {
+    transform: translateX(20rem);
     opacity: 0.5;
   }
 

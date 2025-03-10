@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>i Fit - BMI Calculator</title>
+    <title>i Fit - Exercise Library</title>
     <link rel="stylesheet" href="css.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Poppins"
@@ -11,55 +11,11 @@
     />
     <link rel="icon" type="image/png" href="../i Fit/images/i-fit-logo-for-white-bg.png">
     <style>
-      :root {
-        --text: #000000;
-        --background: #ffffff;
-        --primary: #d3dbf3;
-        --secondary: #95abc6;
-        --accent: #40a5a4;
+      
+      nav {
+        position: static;
       }
-
-      /* dark mode */
-      .dark-theme {
-        --text: #ffffff;
-        --background: #222222;
-        --primary: #454f5a;
-        --secondary: #95abc6;
-        --accent: #5abfbd;
-      }
-
-      body {
-        font-family: "Poppins";
-        background-color: var(--background);
-      }
-
-      .container {
-        background: transparent;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        z-index: 1;
-      }
-
-      input {
-        padding: 10px;
-        margin: 5px;
-        width: 80%;
-      }
-
-      button {
-        padding: 10px 20px;
-        margin-top: 10px;
-        cursor: pointer;
-        border-radius: .5rem;
-        font-weight: bold;
-      }
-
-      #result {
-        margin-top: 15px;
-        font-weight: bold;
-      }
+      
     </style>
   </head>
 
@@ -80,7 +36,7 @@
         <ul class="nav-links">
           <li><a href="index.html #section-2">Exercises</a></li>
           <li><a href="index.html #section-3">Nutrition Guide</a></li>
-          <li><a href="#">BMI Calculator</a></li>
+          <li><a href="bmi.html">BMI Calculator</a></li>
           <li><a href="about.html">About</a></li>
         </ul>
         <ul>
@@ -103,10 +59,10 @@
             <a href="index.html #section-2">Exercises ></a>
           </li>
           <li>
-            <a href="index.html #section-2">Nutrition Guide ></a>
+            <a href="index.html #section-3">Nutrition Guide ></a>
           </li>
           <li>
-            <a href="#">BMI Calculator ></a>
+            <a href="bmi.html">BMI Calculator ></a>
           </li>
           <li>
             <a href="about.html">About ></a>
@@ -126,32 +82,45 @@
       </nav>
     </header>
 
-    <!-- section 1 -->
-    <div class="section-1" id="section-1">
-      <!-- shapes ng section 1 -->
+    <div class="muscle-page">
       <div class="shapes shape-1"></div>
       <div class="shapes shape-2"></div>
       <div class="shapes shape-3"></div>
       <div class="shapes shape-4"></div>
       <div class="shapes shape-5"></div>
-      <div class="container">
-        <h2>BMI Calculator</h2>
-        <input
-          type="number"
-          id="weight"
-          placeholder="Enter weight in kg"
-          required
-        />
-        <input
-          type="number"
-          id="height"
-          placeholder="Enter height in cm"
-          required
-        />
-        <button onclick="calculateBMI()">Calculate BMI</button>
-        <p id="result"></p>
+      <div>
+        <a href="#">
+          <img src="../i Fit/images/muscles/neck.jpg" alt="neck image">
+          <p>Neck</p>
+        </a>
       </div>
+      
     </div>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- footer  -->
     <footer>
       <div class="logo">
