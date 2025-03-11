@@ -1,71 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Background with Text</title>
-  <link rel="stylesheet" href="css.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple JS Image Slider</title>
   <style>
-    /* Reset */
     * {
-      margin: 0;
-      padding: 0;
       box-sizing: border-box;
     }
 
-    /* Container */
-    .hero-section {
-      position: relative;
-      width: 100%;
-      height: 30vh; /* or whatever height you need */
-      overflow: hidden;
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
       display: flex;
-      align-items: center;
       justify-content: center;
-      color: black;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
     }
 
-    /* Background */
-    .hero-background {
-      position: absolute;
-      top: 0;
-      left: 0;
+    .slider-container {
+      position: relative;
+      width: 400px;
+      height: 200px;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      background: #fff;
+    }
+
+    .slider-container img {
       width: 100%;
       height: 100%;
-      background-image: url('images/gym-wallpaper.jpg'); /* Replace with your image */
-      background-size: cover;
-      background-position: center;
-      z-index: 1;
-      opacity: 0.8; /* optional: make it slightly transparent for readability */
+      object-fit: cover;
+      display: none;
     }
 
-    /* Content */
-    .hero-content {
-      position: relative; /* so it sits above the background */
+    .slider-container img.active {
+      display: block;
+    }
+
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #fff;
+      padding: 10px;
+      font-size: 1.5rem;
+      cursor: pointer;
+      border-radius: 50%;
+      user-select: none;
       z-index: 2;
-      text-align: center;
+      transition: background-color 0.3s;
     }
 
-    .hero-content h1 {
-      font-size: 2.5rem;
+    .prev:hover, .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
     }
 
-    .hero-content p {
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
+    .prev {
+      left: 10px;
+    }
+
+    .next {
+      right: 10px;
     }
   </style>
 </head>
 <body>
 
-  <section class="hero-section">
-    <div class="hero-background"></div>
-    
-    <div class="hero-content">
-      <h1>Welcome to i Fit</h1>
-      <p>Your journey starts here</p>dasdasdasdasdasdsadsasad
-    </div>
-  </section>
+  <div class="slider-container">
+    <img src="https://via.placeholder.com/400x200/3498db/ffffff?text=Slide+1" class="active" alt="Slide 1">
+    <img src="https://via.placeholder.com/400x200/e74c3c/ffffff?text=Slide+2" alt="Slide 2">
+    <img src="https://via.placeholder.com/400x200/2ecc71/ffffff?text=Slide+3" alt="Slide 3">
+
+    <div class="prev" onclick="prevSlide()">&#10094;</div>
+    <div class="next" onclick="nextSlide()">&#10095;</div>
+  </div>
+
+  <script>
+    const slides = document.querySelectorAll('.slider-container img');
+    let currentIndex = 0;
+
+    function showSlide(index) {
+      slides.forEach(slide => slide.classList.remove('active'));
+      slides[index].classList.add('active');
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % slides.length;
+      showSlide(currentIndex);
+    }
+
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      showSlide(currentIndex);
+    }
+  </script>
 
 </body>
 </html>
