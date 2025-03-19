@@ -1042,3 +1042,67 @@ iframe {
   text-align: start;
 }
 
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--text);
+  margin: 5rem 0;
+  
+}
+
+.separator::before,
+.separator::after {
+  content: "";
+  flex: 1;
+  border-bottom: 2px solid var(--text);
+  margin: 0 1rem;
+}
+
+.separator span {
+  font-weight: bold;
+  font-size: clamp(0.5rem, 2vw, 1rem);
+}
+
+.featured-articles {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  font-size: clamp(0.5rem, 2vw, 1rem);
+}
+
+.featured-articles div {
+  max-width: clamp(100px, 60vw, 350px);
+  margin: 0 auto;
+}
+
+.featured-articles img {
+  aspect-ratio: 16 / 9;
+  width: clamp(50px, 60vw, 350px);
+  height: auto;
+  object-fit: cover;
+}
+
+.btn {
+  border-bottom: 2px solid var(--accent);
+  font-weight: bold;
+}
+
+.tiny-text {
+  font-size: smaller;
+  color: var(--accent);
+}
+
+
+@media (max-width: 1240px) {
+  .container {
+    width: 80%;
+    margin: auto;
+    color: var(--text);
+    letter-spacing: 0.1rem;
+  }
+
+  
+}
+

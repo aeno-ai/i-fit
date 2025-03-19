@@ -26,11 +26,12 @@
         color: var(--text);
         margin: auto;
         font-size: clamp(0.5rem, 2vw, 1rem);
-        max-width: 80%;
+        max-width: 100%;
       }
 
       .title {
         margin-bottom: 2rem;
+        text-align: center;
       }
       .nutrition-sections img {
         aspect-ratio: 16 / 9;
@@ -41,15 +42,14 @@
         
       }
 
-      .nutrition-header {
-        padding: 0 5rem;
-        z-index: 5;
-      }
+
       /* nav */
       .nutrition-nav {
+        justify-content: center;
         display: flex;
         white-space: nowrap;
         font-size: clamp(0.2rem, 2vw, 1rem);
+        margin-bottom: .5rem;
       }
 
       .nutrition-nav :first-child {
@@ -73,10 +73,9 @@
       }
       
       .nutrition-nav p {
-        margin: 0 1rem 0 0;
+        margin: 0 .5rem 0 0;
         border: 2px solid var(--text);
         padding: 0.5rem;
-        margin-bottom: 5rem;
         cursor: pointer;
       }
 
@@ -100,47 +99,6 @@
         font-weight: bold;
       }
 
-      .separator {
-        display: flex;
-        align-items: center;
-        text-align: center;
-        color: var(--text);
-        margin: 5rem 0;
-      }
-
-      .separator::before,
-      .separator::after {
-        content: "";
-        flex: 1;
-        border-bottom: 2px solid var(--text);
-        margin: 0 1rem;
-      }
-
-      .separator span {
-        font-size: 1.5rem;
-        font-weight: bold;
-      }
-
-      .featured-articles {
-        display: flex;
-        gap: 2rem;
-        margin-bottom: 2rem;
-      }
-
-      .featured-articles div {
-        max-width: clamp(100px, 60vw, 250px);
-        margin: 0 auto;
-      }
-
-      .featured-articles img {
-        aspect-ratio: 16 / 9;
-        width: clamp(100px, 60vw, 250px);
-        height: auto;
-        object-fit: cover;
-      }
-
-
-
       @media (max-width: 1240px) {
         .nutrition-sections {
           gap: 1rem;
@@ -148,10 +106,8 @@
           flex-wrap: wrap;
           
         }
-        .nutrition-sections-header {
-          max-width: 100%;
-          text-align: center;
-        }
+        
+        
 
         .featured-articles {
           flex-wrap: wrap;
@@ -163,10 +119,9 @@
 
         .nutrition-nav p {
           
-          margin: 0 1rem 0 0;
+          margin: 0 .5rem .5rem 0;
           border: 1px solid var(--text);
           padding: 0.2rem;
-          margin-bottom: 1rem;
           cursor: pointer;
         }
       }
@@ -254,7 +209,7 @@
           </p>
         </div>
         <div class="nutrition-nav">
-          <p><a href="">Smoothies</a></p>
+          <p><a href="smoothies.html">Smoothies</a></p>
           <p><a href="deficit.html">Calorie Deficit</a></p>
           <p><a href="surplus.html">Calorie Surplus</a></p>
           <p><a href="supplements.html">Food Supplements</a></p>
@@ -269,7 +224,7 @@
             <p class="tiny-text">HEALTHY SMOOTHIES RECIPES</p>
             <h2>MAKE THESE EASY TOP 10 SMOOTHIES TO START YOUR DAY</h2>
             <p>These will help you get productive throughout the day.</p>
-            <a href="#" class="btn">READ ARTICLE</a>
+            <a href="smoothies.html" class="btn">READ ARTICLE</a>
           </div>
         </div>
       </div>

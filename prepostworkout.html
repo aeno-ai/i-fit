@@ -5,10 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>i-fit - Pre &amp; Post Workout Meals</title>
     <link rel="stylesheet" href="css.css" />
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
-    <link rel="icon" type="image/png" href="../i-fit/images/i-fit-logo-for-white-bg.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../i-fit/images/i-fit-logo-for-white-bg.png"
+    />
     <style>
-      /* Styling for the Pre & Post Workout Meals page */
       nav {
         position: static;
       }
@@ -32,7 +38,7 @@
         background-color: var(--secondary);
       }
       .container {
-        width: 55%;
+        width: 70%;
         margin: auto;
         color: var(--text);
         letter-spacing: 0.1rem;
@@ -55,18 +61,19 @@
       .meal-info h3 {
         margin: 1.5rem 0 0.5rem;
       }
-      /* Image placeholder style */
       .image-placeholder {
         display: block;
-        margin: 1rem auto;
         max-width: 100%;
         height: auto;
-        border: 1px solid #ccc;
+        border: 1px solid var(--text);
+        aspect-ratio: 16 / 9;
+        width: clamp(100px, 60vw, 500px);
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
       }
-      /* Hero image styling */
-      #hero-image {
-        margin-bottom: 2rem;
-      }
+
+
     </style>
   </head>
   <body>
@@ -102,7 +109,6 @@
             </button>
           </li>
         </ul>
-        <!-- Mobile nav bar -->
         <ul class="nav-links-mobile">
           <li><a href="index.html#section-2">Exercises ></a></li>
           <li><a href="index.html#section-3">Nutrition Guide ></a></li>
@@ -122,140 +128,288 @@
         </button>
       </nav>
     </header>
-
     <div class="container">
       <div class="header">
         <h1>THE IMPORTANCE OF PRE &amp; POST WORKOUT MEALS</h1>
-        <p>
-          Medically Reviewed by Dr. Amelia Brown on November 8, 2024 | Written by Jordan Smith, Casey Lee
-        </p>
       </div>
-
       <div class="quick-nav">
-        <a href="#meal-0">Importance</a>
+        <a href="#meal-0">Science &amp; Importance</a>
         <a href="#meal-1">Pre-Workout Recipes</a>
         <a href="#meal-2">Post-Workout Recipes</a>
-        <a href="#meal-3">Meal FAQs</a>
+        <a href="#meal-3">Tips &amp; Additional Info</a>
+        <a href="#meal-4">Meal FAQs</a>
       </div>
-
-      <!-- Hero Image: Displayed first before any recipes -->
-      <div id="hero-image">
-        <img src="path/to/your/image.jpg" alt="Pre &amp; Post Workout Meals" class="image-placeholder" />
-        <p>Replace <code>path/to/your/image.jpg</code> with your image file path.</p>
-      </div>
-
-      <!-- Scientific Explanation Section -->
       <div class="meal-info" id="meal-0">
         <h2>The Science Behind Pre &amp; Post Workout Nutrition</h2>
         <p>
-          <strong>Pre-Workout Nutrition:</strong> Consuming a balanced meal before exercising is crucial for topping up your muscle glycogen levels—the stored form of carbohydrates—which are vital for producing adenosine triphosphate (ATP), the energy currency of the cell. A meal rich in complex carbohydrates combined with a moderate amount of protein helps maintain blood glucose levels and delays fatigue. This ensures that your muscles have readily available energy during your workout, leading to enhanced performance and endurance.
+          <strong>Pre-Workout Nutrition:</strong> Before exercising, it’s vital
+          to fuel your muscles with carbohydrates to replenish glycogen—the
+          stored form of energy in muscle cells. Consuming a balanced
+          pre-workout meal helps maintain blood sugar levels and supplies ATP
+          (adenosine triphosphate), which powers muscle contractions during your
+          workout. Adequate pre-exercise nutrition can delay fatigue and improve
+          overall performance.
         </p>
         <p>
-          <strong>Post-Workout Nutrition:</strong> After exercise, your muscles are primed for recovery. A post-workout meal that includes both proteins and carbohydrates promotes muscle protein synthesis and replenishes depleted glycogen stores. Proteins, especially those high in essential amino acids like leucine, stimulate the mTOR pathway which is critical for muscle repair and growth. Carbohydrates help trigger an insulin response that drives nutrients into muscle cells, accelerating recovery and reducing muscle soreness.
+          <strong>Post-Workout Nutrition:</strong> After exercise, your muscles
+          are in a catabolic state, meaning they need nutrients for repair. A
+          post-workout meal combining proteins (rich in essential amino acids)
+          and carbohydrates can stimulate the mTOR pathway, which is crucial for
+          muscle repair and growth. This nutrient intake replenishes glycogen
+          stores, reduces muscle soreness, and enhances recovery.
+        </p>
+        <p>
+          <strong>Overall Importance:</strong> Both pre and post workout meals
+          are essential not only for maximizing performance but also for
+          ensuring proper recovery. They help stabilize energy levels, support
+          muscle function, and reduce the risk of injury or overtraining.
         </p>
       </div>
-
-      <!-- Pre-Workout Meal Recipes -->
       <div class="meal-info" id="meal-1">
         <h2>Pre-Workout Meal Recipes</h2>
         <h3>Banana Oat Smoothie</h3>
+        <img
+          src="../i-fit/images/banana-oat.jpg"
+          alt="Banana Oat Smoothie"
+          class="image-placeholder"
+        />
         <p>
-          <strong>Ingredients:</strong><br />
-          - 1 medium banana<br />
-          - 1/2 cup rolled oats<br />
-          - 1/2 cup plain Greek yogurt<br />
-          - 1 cup unsweetened almond milk<br />
-          - 1 teaspoon honey<br />
-          - (Optional) 4-5 ice cubes
+          <strong>Ingredients:</strong><br />- 1 medium banana<br />- 1/2 cup
+          rolled oats<br />- 1/2 cup plain Greek yogurt<br />- 1 cup unsweetened
+          almond milk<br />- 1 teaspoon honey<br />- (Optional) 4-5 ice cubes
         </p>
         <p>
-          <strong>Instructions:</strong><br />
-          1. Peel the banana and break it into chunks.<br />
-          2. Combine the banana, rolled oats, Greek yogurt, almond milk, and honey in a blender.<br />
-          3. Add ice cubes if desired.<br />
-          4. Blend until smooth and serve immediately.
+          <strong>Instructions:</strong><br />1. Peel the banana and break it
+          into chunks.<br />2. Combine the banana, rolled oats, Greek yogurt,
+          almond milk, and honey in a blender.<br />3. Add ice cubes if
+          desired.<br />4. Blend until smooth and serve immediately.
         </p>
-
+        <p>
+          <strong>Why This Meal is Good:</strong> The Banana Oat Smoothie
+          provides a balanced mix of complex carbohydrates for sustained energy,
+          natural sugars for a quick boost, and protein for muscle support, all
+          in a light and easily digestible form.
+        </p>
         <h3>Avocado Toast with Egg</h3>
+        <img
+          src="../i-fit/images/avocado-egg.jpg"
+          alt="Avocado Toast with Egg"
+          class="image-placeholder"
+        />
         <p>
-          <strong>Ingredients:</strong><br />
-          - 2 slices whole grain bread<br />
-          - 1/2 ripe avocado<br />
-          - 1 egg (poached or fried)<br />
-          - Salt and pepper to taste<br />
-          - (Optional) 5 cherry tomatoes, halved
+          <strong>Ingredients:</strong><br />- 2 slices whole grain bread<br />-
+          1/2 ripe avocado<br />- 1 egg (poached or fried)<br />- Salt and
+          pepper to taste<br />- (Optional) 5 cherry tomatoes, halved
         </p>
         <p>
-          <strong>Instructions:</strong><br />
-          1. Toast the bread slices until golden and crisp.<br />
-          2. Mash the avocado in a bowl and season with salt and pepper.<br />
-          3. Spread the mashed avocado on each toast slice.<br />
-          4. Top with a poached or fried egg and garnish with cherry tomatoes.
+          <strong>Instructions:</strong><br />1. Toast the bread slices until
+          golden.<br />2. Mash the avocado and season with salt and pepper.<br />3.
+          Spread the mashed avocado on the toast.<br />4. Top with a poached or
+          fried egg and garnish with cherry tomatoes.
+        </p>
+        <p>
+          <strong>Why This Meal is Good:</strong> Avocado Toast with Egg
+          delivers healthy fats, fiber, and high-quality protein, which together
+          provide lasting energy and support muscle performance during your
+          workout.
+        </p>
+        <h3>Whole Grain Pancakes with Blueberries</h3>
+        <img
+          src="../i-fit/images/pancakes.jpg"
+          alt="Whole Grain Pancakes with Blueberries"
+          class="image-placeholder"
+        />
+        <p>
+          <strong>Ingredients:</strong><br />- 1 cup whole grain flour<br />- 1
+          tablespoon baking powder<br />- 1/4 teaspoon salt<br />- 1 egg<br />-
+          1 cup low-fat milk<br />- 1 tablespoon maple syrup<br />- 1/2 cup
+          fresh blueberries
+        </p>
+        <p>
+          <strong>Instructions:</strong><br />1. Mix flour, baking powder, and
+          salt in a bowl.<br />2. In another bowl, whisk together the egg, milk,
+          and maple syrup.<br />3. Combine the wet and dry ingredients and
+          gently fold in blueberries.<br />4. Pour the batter onto a preheated
+          non-stick pan and cook until bubbles form, then flip and cook until
+          golden.
+        </p>
+        <p>
+          <strong>Why This Meal is Good:</strong> These pancakes offer
+          slow-release energy from whole grains and antioxidants from
+          blueberries, making them a nutritious option to fuel your workout.
         </p>
       </div>
-
-      <!-- Post-Workout Meal Recipes -->
       <div class="meal-info" id="meal-2">
         <h2>Post-Workout Meal Recipes</h2>
         <h3>Grilled Chicken Quinoa Bowl</h3>
+        <img
+          src="../i-fit/images/grillied-chicken.jpg"
+          alt="Grilled Chicken Quinoa Bowl"
+          class="image-placeholder"
+        />
         <p>
-          <strong>Ingredients:</strong><br />
-          - 150g (5 oz) grilled chicken breast, sliced<br />
-          - 1/2 cup cooked quinoa<br />
-          - 1 cup steamed broccoli<br />
-          - 1/2 cup roasted sweet potato cubes<br />
-          - 1 tablespoon olive oil<br />
-          - Juice of 1/2 lemon<br />
-          - Salt and pepper to taste
+          <strong>Ingredients:</strong><br />- 150g (5 oz) grilled chicken
+          breast, sliced<br />- 1/2 cup cooked quinoa<br />- 1 cup steamed
+          broccoli<br />- 1/2 cup roasted sweet potato cubes<br />- 1 tablespoon
+          olive oil<br />- Juice of 1/2 lemon<br />- Salt and pepper to taste
         </p>
         <p>
-          <strong>Instructions:</strong><br />
-          1. Prepare quinoa as per package instructions and steam the broccoli.<br />
-          2. Roast sweet potato cubes in the oven at 400°F (200°C) for about 20 minutes until tender.<br />
-          3. In a bowl, combine quinoa, broccoli, and sweet potatoes.<br />
-          4. Top with sliced grilled chicken.<br />
-          5. Drizzle olive oil and lemon juice over the bowl, then season with salt and pepper.
+          <strong>Instructions:</strong><br />1. Prepare quinoa and steam
+          broccoli as per instructions.<br />2. Roast sweet potato cubes at
+          400°F (200°C) for 20 minutes until tender.<br />3. In a bowl, combine
+          quinoa, broccoli, and sweet potatoes.<br />4. Top with grilled
+          chicken, drizzle with olive oil and lemon juice, and season with salt
+          and pepper.
         </p>
-
+        <p>
+          <strong>Why This Meal is Good:</strong> This bowl provides lean
+          protein for muscle repair, complex carbohydrates to replenish glycogen
+          stores, and essential vitamins and minerals from vegetables for
+          overall recovery.
+        </p>
         <h3>Post-Workout Protein Shake</h3>
+        <img
+          src="../i-fit/images/post-protein.jpg"
+          alt="Post-Workout Protein Shake"
+          class="image-placeholder"
+        />
         <p>
-          <strong>Ingredients:</strong><br />
-          - 1 scoop whey protein powder (approx. 25g protein)<br />
-          - 1 cup unsweetened almond milk<br />
-          - 1/2 cup frozen mixed berries<br />
-          - 1 tablespoon almond butter
+          <strong>Ingredients:</strong><br />- 1 scoop whey protein powder
+          (approx. 25g protein)<br />- 1 cup unsweetened almond milk<br />- 1/2
+          cup frozen mixed berries<br />- 1 tablespoon almond butter
         </p>
         <p>
-          <strong>Instructions:</strong><br />
-          1. Combine whey protein, almond milk, frozen berries, and almond butter in a blender.<br />
-          2. Blend until smooth and uniform.<br />
-          3. Consume immediately within 30 minutes post-workout.
+          <strong>Instructions:</strong><br />1. Combine all ingredients in a
+          blender.<br />2. Blend until smooth and uniform.<br />3. Consume
+          immediately within 30 minutes post-workout.
+        </p>
+        <p>
+          <strong>Why This Meal is Good:</strong> The protein shake delivers
+          high-quality protein and carbohydrates quickly, promoting fast muscle
+          recovery and protein synthesis after intense exercise.
+        </p>
+        <h3>Salmon &amp; Sweet Potato Salad</h3>
+        <img
+          src="../i-fit/images/salmon.jpg"
+          alt="Salmon &amp; Sweet Potato Salad"
+          class="image-placeholder"
+        />
+        <p>
+          <strong>Ingredients:</strong><br />- 120g (4 oz) baked salmon,
+          flaked<br />- 1 small sweet potato, roasted and cubed<br />- 2 cups
+          mixed greens<br />- 1/4 cup diced cucumber<br />- 1/4 cup cherry
+          tomatoes, halved<br />- 1 tablespoon olive oil<br />- 1 teaspoon apple
+          cider vinegar<br />- Salt and pepper to taste
+        </p>
+        <p>
+          <strong>Instructions:</strong><br />1. Roast the sweet potato cubes at
+          400°F (200°C) for 25 minutes until tender.<br />2. In a large bowl,
+          combine mixed greens, cucumber, and cherry tomatoes.<br />3. Top with
+          flaked salmon and roasted sweet potato cubes.<br />4. Drizzle with
+          olive oil and apple cider vinegar; season with salt and pepper.
+        </p>
+        <p>
+          <strong>Why This Meal is Good:</strong> This salad combines
+          omega-3-rich salmon and complex carbohydrates from sweet potatoes,
+          along with fresh greens, providing anti-inflammatory benefits and
+          aiding in muscle recovery.
         </p>
       </div>
-
-      <!-- Meal FAQs -->
       <div class="meal-info" id="meal-3">
+        <h2>Tips &amp; Additional Information</h2>
+        <p>
+          <strong>Timing &amp; Portion Control:</strong> Eat your pre-workout
+          meal 30 minutes to 2 hours before exercising and your post-workout
+          meal within 30 minutes to 2 hours after your workout. Adjust portion
+          sizes based on your workout intensity and energy needs.
+        </p>
+        <p>
+          <strong>Hydration:</strong> Stay well-hydrated before, during, and
+          after exercise. Water is essential for nutrient transport and can
+          enhance performance.
+        </p>
+        <p>
+          <strong>Balanced Macronutrients:</strong> Incorporate carbohydrates
+          for energy, proteins for muscle repair, and healthy fats for sustained
+          energy. Tailor your meal composition to your specific training goals.
+        </p>
+        <p>
+          <strong>Meal Planning &amp; Consistency:</strong> Planning meals ahead
+          of time ensures you meet nutritional needs, reduces impulsive eating,
+          and supports consistent performance and recovery.
+        </p>
+      </div>
+      <div class="meal-info" id="meal-4">
         <h2>Meal FAQs</h2>
         <p>
-          <strong>How long before a workout should I eat?</strong><br />
-          It is best to have a meal or snack 30 minutes to 2 hours before your workout, depending on the meal size and your digestion.
+          <strong>How long before a workout should I eat?</strong><br />Aim for
+          a meal or snack 30 minutes to 2 hours before your workout, depending
+          on the meal size and composition.
         </p>
         <p>
-          <strong>What if I can't eat a full meal before working out?</strong><br />
-          A light snack, such as a piece of fruit or a protein bar, can provide a quick energy boost without causing discomfort.
+          <strong>What if I can’t eat a full meal before exercising?</strong
+          ><br />A small, easily digestible snack like a piece of fruit or a
+          protein bar can provide sufficient energy without discomfort.
         </p>
         <p>
-          <strong>Why are post-workout meals necessary?</strong><br />
-          Consuming a meal or snack after exercise helps replenish glycogen stores and stimulates muscle protein synthesis, essential for muscle repair and reducing soreness.
+          <strong>Why are post-workout meals essential?</strong
+          ><br />Post-workout meals replenish glycogen stores and stimulate
+          muscle protein synthesis, which is vital for recovery and reducing
+          muscle soreness.
         </p>
       </div>
     </div>
+    <!-- separator-------------------------------- -->
+    <div class="separator">
+        <span>READ MORE RELATED ARTICLES</span>
+      </div>
+      <!-- separator------------------------------ -->
+    <div class="featured-articles">
+        <div>
+            <img src="../i-fit/images/nutrition-food.jpg" alt="" />
+            <p class="tiny-text">HEALTHY SMOOTHIES RECIPES</p>
+            <h3>Make these easy-to-make smoothies to start your day</h3>
+            <p>These will help you get productive throughout the day.</p>
+            <a href="smoothies.html" class="btn">READ ARTICLE</a>
+          </div>
 
-    <!-- Footer -->
+        <div>
+          <img src="../i-fit/images/surplus.jpg" alt="Calorie Surplus" />
+          <p class="tiny-text">GAIN WEIGHT</p>
+          <h3>Which meals are the best for you to to gain weight?</h3>
+          <p>This is about gaining weight and high-calorie foods.</p>
+          <a href="surplus.html" class="btn">READ ARTICLE</a>
+        </div>
+
+        <div>
+          <img
+            src="../i-fit/images/protein-powder.jpg"
+            alt="Food Supplements"
+          />
+          <p class="tiny-text">SUPPLEMENTS</p>
+          <h3>How do you make your progress fast?</h3>
+          <p>Grow fast with these food supplements.</p>
+          <a href="supplements.html" class="btn">READ ARTICLE</a>
+        </div>
+
+        <div>
+          <img src="../i-fit/images/deficit.jpg" alt="Calorie Deficit" />
+          <p class="tiny-text">LOSE WEIGHT</p>
+          <h3>Which meals should you eat to lose weight?</h3>
+          <p>
+            Read more about how do you lose weight and how can you achieve this.
+          </p>
+          <a href="deficit.html" class="btn">READ ARTICLE</a>
+        </div>
+      </div>
     <footer>
       <div class="logo">
         <a href="index.html">
-          <img src="../i-fit/images/i-fit-logo-for-white-bg.png" alt="logo" class="logo-image" />
+          <img
+            src="../i-fit/images/i-fit-logo-for-white-bg.png"
+            alt="logo"
+            class="logo-image"
+          />
         </a>
         <div class="icons">
           <p>Follow us on our social media:</p>
@@ -263,13 +417,19 @@
             <img src="../i-fit/images/youtube-accent.png" alt="youtube icon" />
           </a>
           <a href="https://www.instagram.com/ayno.ai/" target="_blank">
-            <img src="../i-fit/images/instagram-accent.png" alt="instagram icon" />
+            <img
+              src="../i-fit/images/instagram-accent.png"
+              alt="instagram icon"
+            />
           </a>
           <a href="https://www.tiktok.com/@aeno.ai" target="_blank">
             <img src="../i-fit/images/tiktok-accent.png" alt="tiktok icon" />
           </a>
           <a href="https://www.facebook.com/aenoNotFound" target="_blank">
-            <img src="../i-fit/images/facebook-accent.png" alt="facebook icon" />
+            <img
+              src="../i-fit/images/facebook-accent.png"
+              alt="facebook icon"
+            />
           </a>
           <a href="#" target="_blank">
             <img src="../i-fit/images/x-accent.png" alt="twitter icon" />
