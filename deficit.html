@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>i Fit - Calorie Deficit</title>
+    <link rel="stylesheet" href="css.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="../i Fit/images/i-fit-logo-for-white-bg.png"
+    />
+    <style>
+      /* font-size: clamp(0.5rem, 2vw, 1rem); */
+      nav {
+        position: static;
+      }
+
+      .quick-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: clamp(0.2rem, 2vw, 0.8rem);
+        white-space: nowrap;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+      }
+
+      .quick-nav a {
+        padding: 0.5rem;
+        border: 1px solid var(--text);
+      }
+
+      .quick-nav a:hover {
+        background-color: var(--secondary);
+      }
+
+      .container {
+        width: 50%;
+        margin: auto;
+        color: var(--text);
+        letter-spacing: 0.1rem;
+      }
+      .deficit-information {
+        font-size: clamp(0.5rem, 2vw, 1rem);
+      }
+      .deficit-information li {
+        list-style-type: disc;
+      }
+      .deficit-information p {
+        margin: 1rem 0;
+      }
+
+      .deficit-information h2 {
+        margin: 2rem 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div>
+          <a href="index.html"
+            ><img
+              src="../i Fit/images/i-fit-logo-for-white-bg.png"
+              alt="Logo"
+              class="logo-image"
+              data-light="../i Fit/images/i-fit-logo-for-white-bg.png"
+              data-dark="../i Fit/images/i-fit-logo-for-dark-bg.png"
+          /></a>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html #section-2">Exercises</a></li>
+          <li><a href="index.html #section-3">Nutrition Guide</a></li>
+          <li><a href="bmi.html">BMI Calculator</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <ul>
+          <li class="dark-mode">
+            <button>
+              <img
+                src="../i Fit/images/moon-fill.png"
+                alt="moon"
+                class="dark-mode"
+                theme-moon="../i Fit/images/moon-fill.png"
+                theme-sun="../i Fit/images/sun-line.png"
+              />
+            </button>
+          </li>
+        </ul>
+        <!-- ito yung mobile nav bar -->
+
+        <ul class="nav-links-mobile">
+          <li>
+            <a href="index.html #section-2">Exercises ></a>
+          </li>
+          <li>
+            <a href="index.html #section-3">Nutrition Guide ></a>
+          </li>
+          <li>
+            <a href="bmi.html">BMI Calculator ></a>
+          </li>
+          <li>
+            <a href="about.html">About ></a>
+          </li>
+          <li class="dark-mode-mobile">
+            <button><strong>Dark Mode</strong></button>
+          </li>
+        </ul>
+        <button class="menu-toggle" type="">
+          <img
+            src="../i Fit/images/menu-line.png"
+            alt="menu"
+            menu-line="../i Fit/images/menu-line.png"
+            menu-line-dark="../i Fit/images/menu-line-dark.png"
+          />
+        </button>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="header">
+        <h1>WHAT IS CALORIE DEFICIT?</h1>
+        <p>Medically Reviewed by Poonam Sachdev on July 15, 2024 | Written by Matt McMillen, Paul Frysh</p>
+      </div>
+
+      <div class="quick-nav">
+        <a href="#deficit-1">What is a calorie deficit?</a>
+        <a href="#deficit-2">What Should Your Calorie Deficit Be?</a>
+        <a href="#deficit-3">How to Reach a Calorie Deficit to Lose Weight</a>
+        <a href="#deficit-4">Diet Plan for a Calorie Deficit</a>
+        <a href="#deficit-5">Takeaways</a>
+        <a href="#deficit-6">Calorie Deficit FAQs</a>
+      </div>
+
+      <div class="deficit-information">
+        <div id="deficit-1" class="deficit-1">
+          <h2>What is a calorie deficit?</h2>
+          <p>
+            Calories are a measure of the amount of energy in food. All of the
+            cells in your body require energy in order to work properly, just
+            like a car needs fuel. They get that energy from the foods that you
+            eat. Your body breaks down that food during digestion, releasing the
+            energy that it contains. Those food calories - now converted to
+            energy - power everything that you do: <ins>breathing</ins>,
+            <ins>thinking</ins>, <ins>walking</ins>, <ins>sleeping</ins>,
+            <ins>digesting</ins>, you name it.
+          </p>
+          <p>
+            But your body may not need to use all that energy right after you
+            eat. It stores those extra calories - mostly as fat but also as
+            carbohydrates - for later use. When you go to the gym, study hard
+            for a test, or find yourself involved in any other energy-demanding
+            activity, those stores provide the energy you need to power through.
+          </p>
+          <p>
+            If your activities burn fewer calories than you consume, those
+            stores of extra calories will grow, and you will gain weight. But
+            the opposite is also true: You will lose weight if you burn more
+            calories than you consume. That's because doing so creates a calorie
+            deficit. It forces your body to burn through the stores of fat that
+            you have built up. This leads to weight loss. In fact, you won't
+            lose weight without a calorie deficit.
+          </p>
+        </div>
+        <div id="deficit-2" class="deficit-2">
+          <h2>What Should Your Calorie Deficit Be?</h2>
+          <p>
+            A good rule of thumb for healthy weight loss is a deficit of about
+            500 calories per day. That should put you on course to lose about 1
+            pound per week. This is based on a starting point of at least 1,200
+            to 1,500 calories a day for women and those assigned female at
+            birth, and 1,500 to 1,800 calories a day for men and those assigned
+            male at birth. It can be unhealthy to take in less than that per
+            day. Talk to your doctor about the minimum calories you need.
+          </p>
+          <p>
+            Keep in mind that you may not need a calorie deficit at all. You
+            only need it if you want to lose weight for health or other reasons.
+            Always talk to your doctor before you start a weight loss plan,
+            especially if you have health problems.
+          </p>
+        </div>
+        <div id="deficit-3" class="deficit-3">
+          <h2>How to Reach a Calorie Deficit to Lose Weight?</h2>
+          <p>
+            Reaching a calorie deficit sounds simple: Eat fewer calories than
+            your body needs. But to do that, you must first find out what those
+            needs amount to: How many calories do you burn each day? Once you
+            have established that, you take that total number of calories and
+            subtract from it the number of calories necessary to achieve the
+            calorie deficit you desire.
+          </p>
+          <p>
+            An example: Let's say you find that you need roughly 2,000 calories
+            a day, and you want to lose about 1 pound per week. You could do
+            this by eating about 500 fewer calories every day. Your goal, then,
+            is to eat 1,500 calories daily. That creates a 500-calorie deficit.
+          </p>
+          <p>
+            There's another way. Instead of eating fewer calories on a daily
+            basis, you instead increase the amount of exercise you do so that
+            you burn 500 more calories every day. The result: You need 2,500
+            calories daily, but you keep consuming 2,000 calories. You have
+            created that same 500-calorie deficit.
+          </p>
+          <p>
+            You also can mix and match: Increase the amount of exercise you do
+            daily to burn, say, 200 more calories while cutting 300 calories
+            from your daily diet. Your calorie deficit: 500.
+          </p>
+          <p>Other things that determine your calorie needs:</p>
+          <p>
+            <strong>Your metabolic rate.</strong> This is how quickly or slowly
+            you burn calories at rest. It varies widely from person to person.
+          </p>
+          <p>
+            <strong>Some health conditions.</strong> Hypothyroidism, in which
+            your thyroid gland is underactive, slows metabolism. So does
+            Cushing's syndrome, a condition that's caused by having too much of
+            the hormone cortisol.
+          </p>
+          <p>
+            Remember, creating too much of a calorie deficit is a bad idea. It
+            can cause several side effects, including:
+          </p>
+          <ul>
+            <li>Constipation</li>
+            <li>Dehydration</li>
+            <li>Fatigue</li>
+            <li>Headaches</li>
+            <li>Nausea</li>
+          </ul>
+        </div>
+        <div id="deficit-4" class="deficit-4">
+          <h2>Diet Plan for a Calorie Deficit</h2>
+          <p>
+            There's no single best approach to cutting calories. In general, as
+            long as you cut the calories and maintain a minimum amount, you will
+            lose weight.
+          </p>
+          <p>
+            One proven method is to replace all sugar-sweetened beverages with
+            water, which has no calories. That means soda, sports drinks, energy
+            drinks, sweetened waters and iced teas, and other high-calorie
+            beverages. And don’t forget: Fruit juice contains abundant calories.
+            A 6-ounce serving has 60 to 120 calories.
+          </p>
+          <p>
+            Water not only keeps you hydrated. It may help you adapt to a
+            lower-calorie diet. And keep in mind: When you feel hungry, it may
+            actually be a sign you're thirsty, so reach for a glass of water
+            rather than a caloric snack.
+          </p>
+          <p>
+            The DASH and Mediterranean diets also show some success. These focus
+            on eating:
+          </p>
+          <ul>
+            <li>Fresh fruits and vegetables</li>
+            <li>Lean proteins</li>
+            <li>Whole grains</li>
+            <li>Nuts</li>
+            <li>Seeds</li>
+          </ul>
+          <p>
+            These types of foods help you feel full longer, so you may be less
+            likely to snack between meals. Just be sure to count your calories.
+            Smaller portions can help, too, along with careful planning of your
+            meals.
+          </p>
+          <p>
+            A registered dietitian can help you figure out healthy ways to
+            manage your portions and lower your daily calories.
+          </p>
+          <p>Other tips for maintaining a calorie deficit:</p>
+          <p>
+            <strong>Curb your simple carbs.</strong>White bread, white rice,
+            regular pasta, and other low-fiber, high-carb foods won't help you
+            feel as full as high-fiber complex carbs like brown rice and other
+            whole grains as well as whole fruits and vegetables.
+          </p>
+          <p>
+            <strong>Go light at restaurants.</strong>Avoid large portions and
+            high-fat menu offerings. Start with a small salad or a light soup to
+            fill you up, so you don’t overdo it. Have fresh fruit or sorbet for
+            dessert.
+          </p>
+          <p>
+            <strong>Read food labels.</strong>Important info, like calorie
+            counts and sugar content, can help guide your choices. Take time to
+            compare. For example, some yogurts contain more sugar than others,
+            even if they have less fat.
+          </p>
+          <p>
+            <strong>Limit prepackaged meals.</strong>These often contain more
+            fat, sugar, and salt than you want. Cooking meals made from whole
+            foods puts you in greater control.
+          </p>
+          <p>
+            <strong
+              >What are the best calorie-deficit breakfast options?</strong
+            >
+          </p>
+          <p>
+            For your first meal of the day, focus on fiber and animal or plant
+            protein, which both promote fullness. That may help you avoid
+            snacking throughout the day. Here are a few examples:
+          </p>
+          <ul>
+            <li>Plain Greek yogurt, with added berries, nuts, or seeds</li>
+            <li>
+              A two- or three-egg or egg white omelet with mixed vegetables and
+              quarter-cup of feta cheese or shredded low fat-cheese
+            </li>
+            <li>
+              A smoothie heavy on the protein, with a half-cup of Greek yogurt
+              or a scoop of protein powder, a cup of frozen fruit, a cup of
+              leafy green veggies like spinach or kale, and low fat-milk or an
+              unsweetened milk alternative
+            </li>
+          </ul>
+        </div>
+        <div id="deficit-5" class="deficit-5">
+          <h2>Takeaways</h2>
+          <p>
+            Maintaining a calorie deficit will lead to weight loss. But don’t go
+            overboard. You will struggle to keep up with an oversized calorie
+            deficit, and you will put your health at risk. Instead, aim for a
+            reasonable deficit that allows you lose weight slowly but steadily.
+          </p>
+        </div>
+        <div id="deficit-6" class="deficit-6">
+          <h2>Calorie Deficit FAQs</h2>
+          <p><strong>How do I calculate my calorie deficit? </strong></p>
+          <p>
+            It’s based on things like your age, sex, activity level, and more.
+            Try this calculator:
+            <a
+              href="https://reference.medscape.com/calculator/846/mifflin-st-jeor-equation"
+              ><ins
+                >https://reference.medscape.com/calculator/846/mifflin-st-jeor-equation</ins
+              ></a
+            >
+          </p>
+          <p><strong>Is 1,200 calories a day a deficit?</strong></p>
+          <p>
+            Any amount of calories less than what your body needs daily to
+            maintain your current weight is a deficit. So, if you normally eat
+            1,500 calories a day, for example, then 1,200 would be a deficit.
+          </p>
+          <p>
+            <strong
+              >What calorie deficit do I need to lose 2 pounds a week?
+            </strong>
+          </p>
+          <p>
+            You should eat about 1,000 fewer calories per day. That’s a safe
+            amount of calorie restriction, but a smaller calorie restriction,
+            such as 500 calories, may be easier to maintain over the long term.
+          </p>
+          <p>
+            <strong
+              >How many calories should I eat a day to lose weight?
+            </strong>
+          </p>
+          <p>
+            It depends on how many calories you eat every day to maintain your
+            current weight. For example, if you normally eat 2,500 calories
+            daily, then eating fewer calories will lead to weight loss. Reduce
+            your calories to 2,000 per day, and you should lose about a pound
+            each week.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- footer  -->
+    <footer>
+      <div class="logo">
+        <a href="index.html"
+          ><img
+            src="../i Fit/images/i-fit-logo-for-white-bg.png"
+            alt="logo"
+            class="logo-image"
+        /></a>
+        <div class="icons">
+          <p>Follow us on our social media:</p>
+          <a href="https://www.youtube.com/@aenoplays" target="_blank">
+            <img src="../i Fit/images/youtube-accent.png" alt="youtube icon" />
+          </a>
+          <a href="https://www.instagram.com/ayno.ai/" target="_blank">
+            <img
+              src="../i Fit/images/instagram-accent.png"
+              alt="instagram icon"
+            />
+          </a>
+          <a href="https://www.tiktok.com/@aeno.ai" target="_blank">
+            <img src="../i Fit/images/tiktok-accent.png" alt="tiktok" />
+          </a>
+          <a href="https://www.facebook.com/aenoNotFound" target="_blank">
+            <img
+              src="../i Fit/images/facebook-accent.png"
+              alt="facebook icon"
+            />
+          </a>
+          <a href="#" target="_blank">
+            <img src="../i Fit/images/x-accent.png" alt="twitter icon" />
+          </a>
+        </div>
+      </div>
+
+      <div class="links">
+        <div class="quick-links">
+          <h1>Quick Links</h1>
+          <ul>
+            <li><a href="index.html #section-2">Exercises</a></li>
+            <li><a href="index.html #section-3">Nutrition Guide</a></li>
+            <li><a href="bmi.html">BMI Calculator</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="help">
+          <h1>Help</h1>
+          <ul>
+            <li><a href="#">911</a></li>
+          </ul>
+        </div>
+        <div class="contacts">
+          <h1>Contact Us</h1>
+          <ul>
+            <li>
+              <img src="../i Fit/images/chat-1-fill.png" alt="phone" /><a
+                href="about.html #members"
+                >Message us</a
+              >
+            </li>
+            <li>
+              <img src="../i Fit/images/phone-fill.png" alt="phone" />+63 927
+              146 2168
+            </li>
+            <li>
+              <img
+                src="../i Fit/images/mail-line.png"
+                alt="email"
+              />roes.rabaya.up@phinmaed.com
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="credits">
+        <div>
+          <p>&copy; 2025 i Fit. All rights reserved.</p>
+        </div>
+        <div>
+          <p>Made by Ron Arjie Esperon Rabaya</p>
+          <p>UP-FBS2-BSIT1-02</p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

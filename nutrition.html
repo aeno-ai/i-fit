@@ -9,9 +9,167 @@
       href="https://fonts.googleapis.com/css?family=Poppins"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/png" href="../i Fit/images/i-fit-logo-for-white-bg.png">
+    <link
+      rel="icon"
+      type="image/png"
+      href="../i Fit/images/i-fit-logo-for-white-bg.png"
+    />
     <style>
+      nav {
+        margin-bottom: 5rem;
+        position: static;
+      }
+
+      .nutrition-1 {
+        z-index: 1;
+        position: relative;
+        color: var(--text);
+        margin: auto;
+        font-size: clamp(0.5rem, 2vw, 1rem);
+        max-width: 80%;
+      }
+
+      .title {
+        margin-bottom: 2rem;
+      }
+      .nutrition-sections img {
+        aspect-ratio: 16 / 9;
+        width: clamp(100px, 60vw, 500px);
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+        
+      }
+
+      .nutrition-header {
+        padding: 0 5rem;
+        z-index: 5;
+      }
+      /* nav */
+      .nutrition-nav {
+        display: flex;
+        white-space: nowrap;
+        font-size: clamp(0.2rem, 2vw, 1rem);
+      }
+
+      .nutrition-nav :first-child {
+        animation: slide .5s ease-in-out;
+      }
+
+      .nutrition-nav :nth-child(2) {
+        animation: slide .7s ease-in-out;
+      }
+
+      .nutrition-nav :nth-child(3) {
+        animation: slide .9s ease-in-out;
+      }
+
+      .nutrition-nav :nth-child(4) {
+        animation: slide 1.1s ease-in-out;
+      }
+
+      .nutrition-nav :last-child {
+        animation: slide 1.3s ease-in-out;
+      }
       
+      .nutrition-nav p {
+        margin: 0 1rem 0 0;
+        border: 2px solid var(--text);
+        padding: 0.5rem;
+        margin-bottom: 5rem;
+        cursor: pointer;
+      }
+
+      .nutrition-nav p:hover {
+        background-color: var(--secondary);
+      }
+
+      .tiny-text {
+        font-size: smaller;
+        color: var(--accent);
+      }
+
+      .nutrition-sections {
+        gap: 1rem;
+        display: flex;
+        justify-content: center;
+      }
+
+      .nutrition-1 .btn {
+        border-bottom: 2px solid var(--accent);
+        font-weight: bold;
+      }
+
+      .separator {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: var(--text);
+        margin: 5rem 0;
+      }
+
+      .separator::before,
+      .separator::after {
+        content: "";
+        flex: 1;
+        border-bottom: 2px solid var(--text);
+        margin: 0 1rem;
+      }
+
+      .separator span {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+
+      .featured-articles {
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .featured-articles div {
+        max-width: clamp(100px, 60vw, 250px);
+        margin: 0 auto;
+      }
+
+      .featured-articles img {
+        aspect-ratio: 16 / 9;
+        width: clamp(100px, 60vw, 250px);
+        height: auto;
+        object-fit: cover;
+      }
+
+
+
+      @media (max-width: 1240px) {
+        .nutrition-sections {
+          gap: 1rem;
+          display: flex;
+          flex-wrap: wrap;
+          
+        }
+        .nutrition-sections-header {
+          max-width: 100%;
+          text-align: center;
+        }
+
+        .featured-articles {
+          flex-wrap: wrap;
+        }
+
+        .nutrition-nav {
+          flex-wrap: wrap;
+        }
+
+        .nutrition-nav p {
+          
+          margin: 0 1rem 0 0;
+          border: 1px solid var(--text);
+          padding: 0.2rem;
+          margin-bottom: 1rem;
+          cursor: pointer;
+        }
+      }
     </style>
   </head>
 
@@ -30,9 +188,9 @@
         </div>
 
         <ul class="nav-links">
-          <li><a href="#section-2">Exercises</a></li>
-          <li><a href="#section-3">Nutrition Guide</a></li>
-          <li><a href="#">BMI Calculator</a></li>
+          <li><a href="index.html #section-2">Exercises</a></li>
+          <li><a href="index.html #section-3">Nutrition Guide</a></li>
+          <li><a href="bmi.html">BMI Calculator</a></li>
           <li><a href="about.html">About</a></li>
         </ul>
         <ul>
@@ -52,16 +210,16 @@
 
         <ul class="nav-links-mobile">
           <li>
-            <a href="index.html">Exercises ></a>
+            <a href="index.html #section-2">Exercises ></a>
           </li>
           <li>
-            <a href="index.html">Nutrition Guide ></a>
+            <a href="index.html #section-3">Nutrition Guide ></a>
           </li>
           <li>
             <a href="bmi.html">BMI Calculator ></a>
           </li>
           <li>
-            <a href="#">About ></a>
+            <a href="about.html">About ></a>
           </li>
           <li class="dark-mode-mobile">
             <button><strong>Dark Mode</strong></button>
@@ -79,37 +237,124 @@
     </header>
 
     <!-- section 1 -->
-    <div class="section-1" id="section-1">
+    <div class="shapes shape-1"></div>
+    <div class="shapes shape-2"></div>
+    <div class="shapes shape-3"></div>
+    <div class="shapes shape-4"></div>
+    <div class="shapes shape-5"></div>
+    <div class="nutrition-1" id="nutrition-1">
       <!-- shapes ng section 1 -->
-      <div class="shapes shape-1"></div>
-      <div class="shapes shape-2"></div>
-      <div class="shapes shape-3"></div>
-      <div class="shapes shape-4"></div>
-      <div class="shapes shape-5"></div>
-        <h2>KIMISHA</h2>
+
+      <div class="section nutrition-header">
+        <div class="title">
+          <h1>NUTRITION</h1>
+          <p>
+            Read articles about food intakes that can help you towards your
+            goals.
+          </p>
+        </div>
+        <div class="nutrition-nav">
+          <p><a href="">Smoothies</a></p>
+          <p><a href="deficit.html">Calorie Deficit</a></p>
+          <p><a href="">Calorie Surplus</a></p>
+          <p><a href="">Food Supplements</a></p>
+          <p><a href="">Pre-workout & Post-workout Meals</a></p>
+        </div>
+        <div class="nutrition-sections healthy-food">
+          <img
+            src="../i Fit/images/nutrition-food.jpg"
+            alt="food image hahaha"
+          />
+          <div class="nutrition-sections-header">
+            <p class="tiny-text">HEALTHY SMOOTHIES RECIPES</p>
+            <h2>MAKE THESE EASY TOP 10 SMOOTHIES TO START YOUR DAY</h2>
+            <p>That will help you get productive throughout the day.</p>
+            <a href="#" class="btn">READ ARTICLE</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- separator-------------------------------- -->
+      <div class="separator">
+        <span>FEATURED</span>
+      </div>
+      <!-- separator------------------------------ -->
+
+      <div class="featured-articles">
+        <div>
+          <img src="../i Fit/images/pre-workout.jpg" alt="Pre-workout" />
+          <p class="tiny-text">PRE-WORKOUT & POST-WORKOUT</p>
+          <h3>What should you eat before and after working out?</h3>
+          <p>
+            Read more about why should you have a pre and post workout meals or
+            snacks.
+          </p>
+          <a href="#" class="btn">READ ARTICLE</a>
+        </div>
+
+        <div>
+          <img src="../i Fit/images/surplus.jpg" alt="Calorie Surplus" />
+          <p class="tiny-text">GAIN WEIGHT</p>
+          <h3>Which meals are the best for you to to gain weight?</h3>
+          <p>This is about gaining weight and high-calorie foods.</p>
+          <a href="#" class="btn">READ ARTICLE</a>
+        </div>
+
+        <div>
+          <img
+            src="../i Fit/images/protein-powder.jpg"
+            alt="Food Supplements"
+          />
+          <p class="tiny-text">SUPPLEMENTS</p>
+          <h3>How do you make your progress fast?</h3>
+          <p>Grow fast with these food supplements.</p>
+          <a href="#" class="btn">READ ARTICLE</a>
+        </div>
+
+        <div>
+          <img src="../i Fit/images/deficit.jpg" alt="Calorie Deficit" />
+          <p class="tiny-text">LOSE WEIGHT</p>
+          <h3>Which meals should you eat to lose weight?</h3>
+          <p>
+            Read more about how do you lose weight and how can you achieve this.
+          </p>
+          <a href="deficit.html" class="btn">READ ARTICLE</a>
+        </div>
 
         
+      </div>
     </div>
     <!-- footer  -->
     <footer>
       <div class="logo">
-        <a href="index.html"><img src="../i Fit/images/i-fit-logo-for-white-bg.png" alt="logo" class="logo-image"></a>
+        <a href="index.html"
+          ><img
+            src="../i Fit/images/i-fit-logo-for-white-bg.png"
+            alt="logo"
+            class="logo-image"
+        /></a>
         <div class="icons">
           <p>Follow us on our social media:</p>
           <a href="https://www.youtube.com/@aenoplays" target="_blank">
-            <img src="../i Fit/images/youtube-accent.png" alt="youtube icon">
+            <img src="../i Fit/images/youtube-accent.png" alt="youtube icon" />
           </a>
           <a href="https://www.instagram.com/ayno.ai/" target="_blank">
-            <img src="../i Fit/images/instagram-accent.png" alt="instagram icon">
+            <img
+              src="../i Fit/images/instagram-accent.png"
+              alt="instagram icon"
+            />
           </a>
           <a href="https://www.tiktok.com/@aeno.ai" target="_blank">
-            <img src="../i Fit/images/tiktok-accent.png" alt="tiktok">
+            <img src="../i Fit/images/tiktok-accent.png" alt="tiktok" />
           </a>
           <a href="https://www.facebook.com/aenoNotFound" target="_blank">
-            <img src="../i Fit/images/facebook-accent.png" alt="facebook icon">
+            <img
+              src="../i Fit/images/facebook-accent.png"
+              alt="facebook icon"
+            />
           </a>
           <a href="#" target="_blank">
-            <img src="../i Fit/images/x-accent.png" alt="twitter icon">
+            <img src="../i Fit/images/x-accent.png" alt="twitter icon" />
           </a>
         </div>
       </div>
@@ -117,26 +362,33 @@
       <div class="links">
         <div class="quick-links">
           <h1>Quick Links</h1>
-        <ul>
-          <li><a href="#section-2">Exercises</a></li>
-          <li><a href="#section-3">Nutrition Guide</a></li>
-          <li><a href="bmi.html">BMI Calculator</a></li>
-          <li><a href="">About</a></li>
-        </ul>
+          <ul>
+            <li><a href="#section-2">Exercises</a></li>
+            <li><a href="#section-3">Nutrition Guide</a></li>
+            <li><a href="bmi.html">BMI Calculator</a></li>
+            <li><a href="">About</a></li>
+          </ul>
         </div>
         <div class="help">
           <h1>Help</h1>
           <ul>
-            
             <li><a href="#">911</a></li>
           </ul>
         </div>
         <div class="contacts">
           <h1>Contact Us</h1>
-        <ul>
-          <li><img src="../i Fit/images/phone-fill.png" alt="phone">+63 927 146 2168</li>
-          <li><img src="../i Fit/images/mail-line.png" alt="email">roes.rabaya.up@phinmaed.com</li>
-        </ul>
+          <ul>
+            <li>
+              <img src="../i Fit/images/phone-fill.png" alt="phone" />+63 927
+              146 2168
+            </li>
+            <li>
+              <img
+                src="../i Fit/images/mail-line.png"
+                alt="email"
+              />roes.rabaya.up@phinmaed.com
+            </li>
+          </ul>
         </div>
       </div>
       <div class="credits">
@@ -148,7 +400,6 @@
           <p>UP-FBS2-BSIT1-02</p>
         </div>
       </div>
-
     </footer>
     <script src="script.js"></script>
   </body>

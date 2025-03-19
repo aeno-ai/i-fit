@@ -930,6 +930,18 @@ footer .contacts img {
   }
 }
 
+@keyframes appearSlide {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 /* slide from left to right  */
 @keyframes slide {
   from {
@@ -971,6 +983,7 @@ footer .contacts img {
 iframe {
   width: clamp(100px ,20vw, 400px);
   height: clamp(50px ,20vw, 200px);
+
 }
 
 .muscle-page {
@@ -985,12 +998,17 @@ iframe {
   gap: 3rem;
   height: 100vh;
   
+  
 }
 
 .muscle-page img {
   width: clamp(8rem, 20vw, 13rem);
   border: 2px solid var(--text);
   border-radius: 0.5rem;
+
+}
+.muscle-page h1 {
+  animation: appear 1s ease-in-out;
 }
 
 .exercises-variations {
