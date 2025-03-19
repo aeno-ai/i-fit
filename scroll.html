@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll to Section</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; /* Smooth scrolling effect */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Bar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #3a506b; /* Dark blue shade */
+    padding: 15px 0;
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0 50px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: #5bc0be;
+    border-radius: 5px;
+}
+
+/* Sections */
+section {
+    height: 100vh; /* Full-screen sections */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+}
+
+#home {
+    background: #000000; /* Black */
+    color: white;
+}
+
+#about {
+    background: #0b132b; /* Dark blue */
+    color: white;
+}
+
+#services {
+    background: #3a506b; /* A bit darker */
+    color: white;
+}
+
+#contact {
+    background: #5bc0be; /* Cyan-like */
+    color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    section {
+        height: auto;
+        padding: 80px 20px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Links -->
+    <nav>
+        <ul>
+            <li><a href="#section1">Go to Section 1</a></li>
+            <li><a href="#section2">Go to Section 2</a></li>
+            <li><a href="#section3">Go to Section 3</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sections -->
+    <section id="section1">
+        <h2>Section 1</h2>
+        <p>This is the first section.</p>
+    </section>
+
+    <section id="section2">
+        <h2>Section 2</h2>
+        <p>This is the second section.</p>
+    </section>
+
+    <section id="section3">
+        <h2>Section 3</h2>
+        <p>This is the third section.</p>
+    </section>
+
+</body>
+</html>
