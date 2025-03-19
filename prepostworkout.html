@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>i-fit - Pre &amp; Post Workout Meals</title>
+    <link rel="stylesheet" href="css.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="../i-fit/images/i-fit-logo-for-white-bg.png" />
+    <style>
+      /* Styling for the Pre & Post Workout Meals page */
+      nav {
+        position: static;
+      }
+      .quick-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: clamp(0.2rem, 2vw, 0.8rem);
+        white-space: nowrap;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+        margin-bottom: 1rem;
+      }
+      .quick-nav a {
+        padding: 0.5rem;
+        border: 1px solid var(--text);
+        text-decoration: none;
+        color: inherit;
+      }
+      .quick-nav a:hover {
+        background-color: var(--secondary);
+      }
+      .container {
+        width: 55%;
+        margin: auto;
+        color: var(--text);
+        letter-spacing: 0.1rem;
+      }
+      .meal-info {
+        font-size: clamp(0.5rem, 2vw, 1rem);
+        margin-bottom: 2rem;
+      }
+      .meal-info li {
+        list-style-type: disc;
+        margin-left: 1.2rem;
+      }
+      .meal-info p {
+        margin: 1rem 0;
+        line-height: 1.5;
+      }
+      .meal-info h2 {
+        margin: 2rem 0 1rem;
+      }
+      .meal-info h3 {
+        margin: 1.5rem 0 0.5rem;
+      }
+      /* Image placeholder style */
+      .image-placeholder {
+        display: block;
+        margin: 1rem auto;
+        max-width: 100%;
+        height: auto;
+        border: 1px solid #ccc;
+      }
+      /* Hero image styling */
+      #hero-image {
+        margin-bottom: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <a href="index.html">
+            <img
+              src="../i-fit/images/i-fit-logo-for-white-bg.png"
+              alt="Logo"
+              class="logo-image"
+              data-light="../i-fit/images/i-fit-logo-for-white-bg.png"
+              data-dark="../i-fit/images/i-fit-logo-for-dark-bg.png"
+            />
+          </a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html#section-2">Exercises</a></li>
+          <li><a href="index.html#section-3">Nutrition Guide</a></li>
+          <li><a href="bmi.html">BMI Calculator</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+        <ul>
+          <li class="dark-mode">
+            <button>
+              <img
+                src="../i-fit/images/moon-fill.png"
+                alt="moon"
+                class="dark-mode"
+                theme-moon="../i-fit/images/moon-fill.png"
+                theme-sun="../i-fit/images/sun-line.png"
+              />
+            </button>
+          </li>
+        </ul>
+        <!-- Mobile nav bar -->
+        <ul class="nav-links-mobile">
+          <li><a href="index.html#section-2">Exercises ></a></li>
+          <li><a href="index.html#section-3">Nutrition Guide ></a></li>
+          <li><a href="bmi.html">BMI Calculator ></a></li>
+          <li><a href="about.html">About ></a></li>
+          <li class="dark-mode-mobile">
+            <button><strong>Dark Mode</strong></button>
+          </li>
+        </ul>
+        <button class="menu-toggle" type="">
+          <img
+            src="../i-fit/images/menu-line.png"
+            alt="menu"
+            menu-line="../i-fit/images/menu-line.png"
+            menu-line-dark="../i-fit/images/menu-line-dark.png"
+          />
+        </button>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="header">
+        <h1>THE IMPORTANCE OF PRE &amp; POST WORKOUT MEALS</h1>
+        <p>
+          Medically Reviewed by Dr. Amelia Brown on November 8, 2024 | Written by Jordan Smith, Casey Lee
+        </p>
+      </div>
+
+      <div class="quick-nav">
+        <a href="#meal-0">Importance</a>
+        <a href="#meal-1">Pre-Workout Recipes</a>
+        <a href="#meal-2">Post-Workout Recipes</a>
+        <a href="#meal-3">Meal FAQs</a>
+      </div>
+
+      <!-- Hero Image: Displayed first before any recipes -->
+      <div id="hero-image">
+        <img src="path/to/your/image.jpg" alt="Pre &amp; Post Workout Meals" class="image-placeholder" />
+        <p>Replace <code>path/to/your/image.jpg</code> with your image file path.</p>
+      </div>
+
+      <!-- Scientific Explanation Section -->
+      <div class="meal-info" id="meal-0">
+        <h2>The Science Behind Pre &amp; Post Workout Nutrition</h2>
+        <p>
+          <strong>Pre-Workout Nutrition:</strong> Consuming a balanced meal before exercising is crucial for topping up your muscle glycogen levels—the stored form of carbohydrates—which are vital for producing adenosine triphosphate (ATP), the energy currency of the cell. A meal rich in complex carbohydrates combined with a moderate amount of protein helps maintain blood glucose levels and delays fatigue. This ensures that your muscles have readily available energy during your workout, leading to enhanced performance and endurance.
+        </p>
+        <p>
+          <strong>Post-Workout Nutrition:</strong> After exercise, your muscles are primed for recovery. A post-workout meal that includes both proteins and carbohydrates promotes muscle protein synthesis and replenishes depleted glycogen stores. Proteins, especially those high in essential amino acids like leucine, stimulate the mTOR pathway which is critical for muscle repair and growth. Carbohydrates help trigger an insulin response that drives nutrients into muscle cells, accelerating recovery and reducing muscle soreness.
+        </p>
+      </div>
+
+      <!-- Pre-Workout Meal Recipes -->
+      <div class="meal-info" id="meal-1">
+        <h2>Pre-Workout Meal Recipes</h2>
+        <h3>Banana Oat Smoothie</h3>
+        <p>
+          <strong>Ingredients:</strong><br />
+          - 1 medium banana<br />
+          - 1/2 cup rolled oats<br />
+          - 1/2 cup plain Greek yogurt<br />
+          - 1 cup unsweetened almond milk<br />
+          - 1 teaspoon honey<br />
+          - (Optional) 4-5 ice cubes
+        </p>
+        <p>
+          <strong>Instructions:</strong><br />
+          1. Peel the banana and break it into chunks.<br />
+          2. Combine the banana, rolled oats, Greek yogurt, almond milk, and honey in a blender.<br />
+          3. Add ice cubes if desired.<br />
+          4. Blend until smooth and serve immediately.
+        </p>
+
+        <h3>Avocado Toast with Egg</h3>
+        <p>
+          <strong>Ingredients:</strong><br />
+          - 2 slices whole grain bread<br />
+          - 1/2 ripe avocado<br />
+          - 1 egg (poached or fried)<br />
+          - Salt and pepper to taste<br />
+          - (Optional) 5 cherry tomatoes, halved
+        </p>
+        <p>
+          <strong>Instructions:</strong><br />
+          1. Toast the bread slices until golden and crisp.<br />
+          2. Mash the avocado in a bowl and season with salt and pepper.<br />
+          3. Spread the mashed avocado on each toast slice.<br />
+          4. Top with a poached or fried egg and garnish with cherry tomatoes.
+        </p>
+      </div>
+
+      <!-- Post-Workout Meal Recipes -->
+      <div class="meal-info" id="meal-2">
+        <h2>Post-Workout Meal Recipes</h2>
+        <h3>Grilled Chicken Quinoa Bowl</h3>
+        <p>
+          <strong>Ingredients:</strong><br />
+          - 150g (5 oz) grilled chicken breast, sliced<br />
+          - 1/2 cup cooked quinoa<br />
+          - 1 cup steamed broccoli<br />
+          - 1/2 cup roasted sweet potato cubes<br />
+          - 1 tablespoon olive oil<br />
+          - Juice of 1/2 lemon<br />
+          - Salt and pepper to taste
+        </p>
+        <p>
+          <strong>Instructions:</strong><br />
+          1. Prepare quinoa as per package instructions and steam the broccoli.<br />
+          2. Roast sweet potato cubes in the oven at 400°F (200°C) for about 20 minutes until tender.<br />
+          3. In a bowl, combine quinoa, broccoli, and sweet potatoes.<br />
+          4. Top with sliced grilled chicken.<br />
+          5. Drizzle olive oil and lemon juice over the bowl, then season with salt and pepper.
+        </p>
+
+        <h3>Post-Workout Protein Shake</h3>
+        <p>
+          <strong>Ingredients:</strong><br />
+          - 1 scoop whey protein powder (approx. 25g protein)<br />
+          - 1 cup unsweetened almond milk<br />
+          - 1/2 cup frozen mixed berries<br />
+          - 1 tablespoon almond butter
+        </p>
+        <p>
+          <strong>Instructions:</strong><br />
+          1. Combine whey protein, almond milk, frozen berries, and almond butter in a blender.<br />
+          2. Blend until smooth and uniform.<br />
+          3. Consume immediately within 30 minutes post-workout.
+        </p>
+      </div>
+
+      <!-- Meal FAQs -->
+      <div class="meal-info" id="meal-3">
+        <h2>Meal FAQs</h2>
+        <p>
+          <strong>How long before a workout should I eat?</strong><br />
+          It is best to have a meal or snack 30 minutes to 2 hours before your workout, depending on the meal size and your digestion.
+        </p>
+        <p>
+          <strong>What if I can't eat a full meal before working out?</strong><br />
+          A light snack, such as a piece of fruit or a protein bar, can provide a quick energy boost without causing discomfort.
+        </p>
+        <p>
+          <strong>Why are post-workout meals necessary?</strong><br />
+          Consuming a meal or snack after exercise helps replenish glycogen stores and stimulates muscle protein synthesis, essential for muscle repair and reducing soreness.
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="logo">
+        <a href="index.html">
+          <img src="../i-fit/images/i-fit-logo-for-white-bg.png" alt="logo" class="logo-image" />
+        </a>
+        <div class="icons">
+          <p>Follow us on our social media:</p>
+          <a href="https://www.youtube.com/@aenoplays" target="_blank">
+            <img src="../i-fit/images/youtube-accent.png" alt="youtube icon" />
+          </a>
+          <a href="https://www.instagram.com/ayno.ai/" target="_blank">
+            <img src="../i-fit/images/instagram-accent.png" alt="instagram icon" />
+          </a>
+          <a href="https://www.tiktok.com/@aeno.ai" target="_blank">
+            <img src="../i-fit/images/tiktok-accent.png" alt="tiktok icon" />
+          </a>
+          <a href="https://www.facebook.com/aenoNotFound" target="_blank">
+            <img src="../i-fit/images/facebook-accent.png" alt="facebook icon" />
+          </a>
+          <a href="#" target="_blank">
+            <img src="../i-fit/images/x-accent.png" alt="twitter icon" />
+          </a>
+        </div>
+      </div>
+      <div class="links">
+        <div class="quick-links">
+          <h1>Quick Links</h1>
+          <ul>
+            <li><a href="index.html#section-2">Exercises</a></li>
+            <li><a href="index.html#section-3">Nutrition Guide</a></li>
+            <li><a href="bmi.html">BMI Calculator</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+        <div class="help">
+          <h1>Help</h1>
+          <ul>
+            <li><a href="#">911</a></li>
+          </ul>
+        </div>
+        <div class="contacts">
+          <h1>Contact Us</h1>
+          <ul>
+            <li>
+              <img src="../i-fit/images/chat-1-fill.png" alt="chat" />
+              <a href="about.html#members">Message us</a>
+            </li>
+            <li>
+              <img src="../i-fit/images/phone-fill.png" alt="phone" />
+              +63 927 146 2168
+            </li>
+            <li>
+              <img src="../i-fit/images/mail-line.png" alt="email" />
+              roes.rabaya.up@phinmaed.com
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="credits">
+        <div>
+          <p>&copy; 2025 i-fit. All rights reserved.</p>
+        </div>
+        <div>
+          <p>Made by Ron Arjie Esperon Rabaya</p>
+          <p>UP-FBS2-BSIT1-02</p>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
