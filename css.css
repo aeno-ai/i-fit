@@ -172,34 +172,6 @@ nav li {
   }
 }
 /* end of navigation bar css -------------------------------------------------------------------------- */
-
-/* SECTION 1 NG PAGE KO */
-
-.section-1 {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  align-items: center;
-  color: var(--text);
-}
-
-.i-fit {
-  border-right: 3px solid;
-  width: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: typing 2s steps(5), cursor 0.4s step-end infinite alternate;
-}
-
-@keyframes cursor {
-  50% {
-    border-color: transparent;
-  }
-}
-
 .shapes {
   position: absolute;
   opacity: 20%;
@@ -332,6 +304,36 @@ nav li {
   top: 320%;
   animation: floating 10s ease;
 }
+/* SECTION 1 NG PAGE KO */
+
+.section-1 {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  align-items: center;
+  color: white;
+  position: relative;
+  height: 80vh;
+  width: 100%;
+}
+
+
+
+.i-fit {
+  border-right: 3px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(5), cursor 0.4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
 
 @keyframes floating {
   0% {
@@ -347,19 +349,44 @@ nav li {
   }
 }
 
+.section-1 video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  object-fit: cover;
+  border-bottom: 5px solid var(--accent);
+}
+
+.video-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 80%; 
+  overflow: hidden;
+  z-index: 1;
+  object-fit: cover;
+  
+}
+
+
 .welcome-message {
-  max-width: 35rem;
-  padding: 4rem;
+  margin-left: 2rem;
+  max-width: 40%;
+  margin: 0 auto;
+  
 }
 
 .welcome-message h2 {
-  font-size: 2.1rem;
-  justify-content: center;
+  position: relative;
+  z-index: 1;
+  font-size: clamp(1.5rem, 2vw, 2.1rem);
   animation: slide 1s ease-in-out;
 }
 
 .welcome-message p {
-  font-size: 1.3rem;
+  position: relative;
+  z-index: 1;
+  font-size: clamp(0.8rem, 2vw, 1.3rem);
   animation: slide 0.8s ease-in-out;
 }
 
@@ -369,11 +396,13 @@ nav li {
 }
 
 .section-1 .welcome-message button {
-  padding: 1rem;
-  font-size: 1rem;
+  position: relative;
+  z-index: 1;
+  padding: clamp(.5rem, 2vw, 1rem);
+  font-size: clamp(.5rem, 2vw, 1rem);
   margin: 1rem 0 0 0;
   font-weight: bolder;
-  border-radius: 1rem;
+  border-radius: .5rem;
   transition: 0.2s ease-in;
   cursor: pointer;
   border: 1px solid black;
@@ -385,28 +414,6 @@ nav li {
 }
 
 @media (max-width: 960px) {
-  .welcome-message {
-    margin-top: 3rem;
-  }
-
-  .welcome-message h2 {
-    font-size: 1.5rem;
-  }
-
-  .welcome-message p {
-    font-size: 1rem;
-  }
-
-  .section-1 button {
-    padding: 0.8rem;
-    font-size: 0.8rem;
-  }
-
-  .section-1 img {
-    width: 13rem;
-    position: relative;
-  }
-
   .shapes {
     display: none;
   }
@@ -434,17 +441,16 @@ nav li {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
   justify-content: center;
   border-radius: 2rem;
-  padding: 1rem;
-  
+  padding: 0.5rem;
 }
 
 .exercise-message h2 {
-  font-size: clamp(1.5rem,2vw,2.3rem);
+  font-size: clamp(1.5rem, 2vw, 2.3rem);
   text-align: center;
 }
 
 .exercise-message p {
-  font-size: 1.3rem;
+  font-size: clamp(0.8rem, 2vw, 1.3rem);
   text-align: center;
 }
 
@@ -454,8 +460,7 @@ nav li {
   justify-content: space-evenly;
   text-align: center;
   flex-wrap: wrap;
-  gap: .5rem;
-  flex: 1 1 ;
+  gap: 0.5rem;
 }
 
 .muscles div {
@@ -463,10 +468,10 @@ nav li {
 }
 
 .muscles a img {
-  
+  flex-shrink: 0;
   display: flex;
-  width: 20rem;
-  height: 10rem;
+  width: clamp(10rem, 20vw, 20rem);
+  height: clamp(7rem, 20vw, 10rem);
   transition: 0.2s ease-in;
   border-radius: 1rem;
   margin: 0 1rem;
@@ -507,11 +512,11 @@ nav li {
 }
 
 .exercise-message button {
-  padding: 1rem;
-  font-size: 1rem;
-  margin: 1rem 0 0 0;
+  padding: 0.5rem;
+  font-size: clamp(0.5rem, 2vw, 1rem);
+  margin: 1.5rem 0;
   font-weight: bold;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   transition: 0.2s ease-in;
   cursor: pointer;
   transition: 0.3s ease-in;
@@ -557,16 +562,15 @@ nav li {
   border-radius: 1rem;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  flex: 1 0 clamp(250px, 30%, 350px); 
+  flex: 1 0 clamp(250px, 30%, 350px);
   max-width: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: clamp(1rem, 2.5vw, 2rem);
   transition: transform 0.3s ease;
+  z-index: 2;
 }
-
-
 
 .cards:hover {
   transform: translateY(-5px);
@@ -582,13 +586,13 @@ nav li {
 }
 
 .cards h3 {
-  font-size: clamp(1.25rem, 3vw, .1rem);
+  font-size: clamp(1.25rem, 3vw, 0.1rem);
   margin-bottom: 0.5rem;
 }
 
 .cards p {
-  font-size: clamp(0.9rem, 2.5vw, .2rem);
-  
+  font-size: clamp(0.9rem, 2.5vw, 0.2rem);
+
   text-align: left;
 }
 
@@ -620,7 +624,6 @@ nav li {
   }
 }
 
-
 /* end of section 3 ---------------------- */
 
 /* section 4*/
@@ -629,9 +632,7 @@ nav li {
   padding: 0;
   width: 100%;
   color: var(--text);
-
 }
-
 
 .influencers-message {
   text-align: center;
@@ -680,9 +681,6 @@ nav li {
 }
 
 @media (max-width: 575px) {
-  
-
-  
 }
 /* end of section 4 ---------------------------------- */
 /* footer  */
@@ -693,6 +691,8 @@ footer {
   padding: 2rem;
   color: var(--text);
   margin-top: 5rem;
+  width: 100%;
+  height: auto;
 }
 
 .footer-1 {
@@ -849,9 +849,8 @@ footer .contacts img {
 }
 
 iframe {
-  width: clamp(100px ,20vw, 400px);
-  height: clamp(50px ,20vw, 200px);
-
+  width: clamp(100px, 20vw, 400px);
+  height: clamp(50px, 20vw, 200px);
 }
 
 .muscle-page {
@@ -865,18 +864,12 @@ iframe {
   flex-direction: column;
   gap: 3rem;
   height: 100vh;
-  
-  
 }
 
 .muscle-page img {
   width: clamp(8rem, 20vw, 13rem);
   border: 2px solid var(--text);
   border-radius: 0.5rem;
-
-}
-.muscle-page h1 {
-  animation: appear 1s ease-in-out;
 }
 
 .exercises-variations {
@@ -891,7 +884,6 @@ iframe {
   border-top: 0.5rem solid var(--accent);
   z-index: 2;
   padding-bottom: 1rem;
- 
 }
 
 .exercises-cards {
@@ -902,7 +894,7 @@ iframe {
   gap: 2rem;
 }
 
-.exercises-cards h4{
+.exercises-cards h4 {
   background-color: var(--secondary);
 }
 
@@ -916,7 +908,6 @@ iframe {
   text-align: center;
   color: var(--text);
   margin: 5rem 0;
-  
 }
 
 .separator::before,
@@ -933,7 +924,6 @@ iframe {
 }
 
 .featured-articles {
-  
   display: flex;
   gap: 1rem;
   margin-bottom: 2rem;
@@ -943,7 +933,6 @@ iframe {
 }
 
 .featured-articles div {
-  
   max-width: clamp(100px, 60vw, 350px);
   margin: 0 auto;
   position: relative;
@@ -970,7 +959,6 @@ iframe {
   color: var(--accent);
 }
 
-
 @media (max-width: 1240px) {
   .container {
     width: 80%;
@@ -978,7 +966,4 @@ iframe {
     color: var(--text);
     letter-spacing: 0.1rem;
   }
-
-  
 }
-

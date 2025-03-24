@@ -1,13 +1,18 @@
-document.addEventListener("DOMContentLoaded", function () {
-    let foodsContainer = document.querySelector(".foods");
-    let prevButton = document.querySelector(".prev");
-    let nextButton = document.querySelector(".next");
+const display = document.getElementById('display');
 
-    nextButton.addEventListener("click", function () {
-        foodsContainer.scrollBy({ left: 300, behavior: "smooth" }); // Scroll right
-    });
+function buttonAppend(button){
+    display.value += button;
+}
 
-    prevButton.addEventListener("click", function () {
-        foodsContainer.scrollBy({ left: -300, behavior: "smooth" }); // Scroll left
-    });
-});
+function clearDisplay(){
+    display.value = '';
+}
+
+function calculate(){
+    try {
+        display.value = eval(display.value);
+    }
+    catch (error){
+        display.value = "ERROR";
+    }
+}
