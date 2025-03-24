@@ -513,11 +513,11 @@ nav li {
 }
 
 .exercise-message button {
-  padding: 0.5rem;
-  font-size: clamp(0.5rem, 2vw, 1rem);
+  padding: 1rem;
+  font-size: .8rem;
   margin: 1.5rem 0;
   font-weight: bold;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   transition: 0.2s ease-in;
   cursor: pointer;
   transition: 0.3s ease-in;
@@ -603,7 +603,7 @@ nav li {
 
 .read-more button {
   padding: 1rem;
-  font-size: 1rem;
+  font-size: .8rem;
   margin: 1rem 0 0 0;
   font-weight: bold;
   border-radius: 1rem;
