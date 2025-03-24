@@ -27,12 +27,16 @@
         margin: auto;
         font-size: clamp(0.5rem, 2vw, 1rem);
         max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
       }
 
       .title {
         margin-bottom: 2rem;
         text-align: center;
       }
+
       .nutrition-sections img {
         aspect-ratio: 16 / 9;
         width: clamp(100px, 60vw, 500px);
@@ -42,6 +46,16 @@
         
       }
 
+      .nutrition-sections-header h2, .nutrition-sections-header p {
+        text-align: start;
+        font-size: clamp(0rem, 2vw, 1rem);
+      }
+
+      .nutrition-sections-header{
+        
+        position: relative;
+        padding-bottom: 5rem;
+      }
 
       /* nav */
       .nutrition-nav {
@@ -49,7 +63,7 @@
         display: flex;
         white-space: nowrap;
         font-size: clamp(0.2rem, 2vw, 1rem);
-        margin-bottom: .5rem;
+        margin-bottom: 5rem;
       }
 
       .nutrition-nav :first-child {
@@ -88,6 +102,10 @@
         color: var(--accent);
       }
 
+      .healthy-food {
+        position: relative;
+      }
+
       .nutrition-sections {
         gap: 1rem;
         display: flex;
@@ -106,9 +124,6 @@
           flex-wrap: wrap;
           
         }
-        
-        
-
         .featured-articles {
           flex-wrap: wrap;
         }

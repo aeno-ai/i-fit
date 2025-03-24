@@ -65,3 +65,6 @@ function calculateBMI() {
         document.getElementById("result").innerText = "Please enter valid values.";
     }
 }
+
+//slider 
+

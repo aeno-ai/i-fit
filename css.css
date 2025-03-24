@@ -433,7 +433,6 @@ nav li {
   background-color: var(--primary);
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
   justify-content: center;
-  width: 100%;
   border-radius: 2rem;
   padding: 1rem;
 }
@@ -573,40 +572,51 @@ nav li {
   height: 100vh;
   width: 100%;
   color: var(--text);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  scroll-margin-top: 10rem;
 }
-
-.nutrition h2 {
-  font-size: 2rem;
+.nutrition-header {
+  text-align: center;
+}
+.nutrition-header h2 {
+  font-size: clamp(0.8rem, 20vw, 2.5rem);
+}
+.nutrition-header p {
+  font-size: clamp(0.5rem, 2vw, 1rem);
 }
 
 .foods {
   display: flex;
-  gap: 1rem;
+  gap: 10rem;
   margin-top: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .foods img {
-  width: 23rem;
-  height: 21rem;
+  width: 100%;
+  height: clamp(10rem, 18vw, 21rem);
+  aspect-ratio: 1/1;
+  object-fit: cover;
 }
 
 .foods h3 {
   text-align: center;
+  font-size: clamp(0.5rem, 2vw, 1rem);
 }
 
 .foods p {
   padding: 1rem;
   font-size: 0.8rem;
-  max-width: 23rem;
+  font-size: clamp(0.5rem, 2vw, 1rem);
   text-align: left;
 }
 
 .cards {
+  max-width: clamp(15rem, 20vw, 25rem);
+  height: auto;
   border: 1px solid var(--text);
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  
 }
 
 .read-more {
@@ -618,7 +628,7 @@ nav li {
 
 .read-more button {
   padding: 1rem;
-  font-size: 1rem;
+  font-size: clamp(0.5rem, 2vw, 1rem);
   margin: 1rem 0 0 0;
   font-weight: bold;
   border-radius: 1rem;
@@ -632,123 +642,24 @@ nav li {
   background-color: var(--secondary);
 }
 
-@media (max-width: 1240px) {
-  .nutrition {
-    margin-top: 7rem;
-  }
-  .foods {
-    display: flex;
-    gap: 0.5rem;
-    margin-top: 1rem;
-  }
-
-  .nutrition h2 {
-    font-size: 1.2rem;
-    text-align: center;
-  }
-
-  .nutrition p {
-    text-align: center;
-  }
-
-  .foods img {
-    width: 15rem;
-    height: 13rem;
-  }
-
-  .foods h3 {
-    text-align: center;
-    font-size: 0.9rem;
-  }
-
-  .foods p {
-    padding: 0.3rem;
-    font-size: 0.8rem;
-    text-align: center;
-    max-width: 15rem;
-  }
-
-  .cards {
-    border: 1px solid var(--text);
-  }
-
-  .read-more button {
-    padding: 0.5rem;
-    font-size: 0.8rem;
+@media (max-width: 820px) {
+  .section-3 {
+    margin-bottom: 17rem;
   }
 }
 
-@media (max-width: 575px) {
-  .nutrition {
-    margin: 25rem 0;
-  }
-
-  .nutrition h2 {
-    text-align: center;
-  }
-
-  .foods {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    max-width: 80%;
-    margin: 1.5rem auto;
-  }
-
-  .foods img {
-    width: 15rem;
-    height: 9rem;
-    max-width: 100%;
-  }
-
-  .foods h3 {
-    text-align: center;
-    font-size: 0.7rem;
-  }
-
-  .foods p {
-    padding: 0.5rem;
-    font-size: 0.7rem;
-    text-align: center;
-  }
-
-  .cards {
-    border: 1px solid var(--text);
-    text-align: center;
-  }
-}
 /* end of section 3 ---------------------- */
 
 /* section 4*/
 
 .section-4 {
-  margin: 0;
   padding: 0;
-  height: 100vh;
+  height: auto;
   width: 100%;
   color: var(--text);
+
 }
 
-.socmed img {
-  width: 2rem;
-  height: 2rem;
-}
-
-/* buttons */
-.section-4 .socmed {
-  display: flex;
-  border: 1px solid var(--text);
-  padding: 0.7rem;
-  border-radius: 1rem;
-  color: var(--text);
-  flex-direction: column;
-  margin: 1rem 0;
-}
-.socmed:hover {
-  background-color: var(--primary);
-}
-
-/* end of buttons -------------------------------*/
 
 .influencers-message {
   text-align: center;
@@ -767,6 +678,8 @@ nav li {
   justify-content: space-evenly;
   align-items: center;
   margin: 4rem 0 0 0;
+  gap: 2rem;
+  overflow-x: auto;
 }
 
 .middle-message {
@@ -776,8 +689,10 @@ nav li {
 }
 
 .influencer img {
-  width: 25rem;
-  height: 25rem;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  width: clamp(12rem, 20vw, 25rem);
+  height: clamp(12rem, 20vw, 25rem);
   border-radius: 2rem;
   border: 1px solid var(--text);
 }
@@ -788,63 +703,40 @@ nav li {
 
 @media (max-width: 1240px) {
   .section-4 {
-    margin: 4rem 0;
-  }
-
-  .socmed img {
-    width: 1rem;
-    height: 1rem;
-  }
-
-  .influencers-message {
-    text-align: center;
-  }
-
-  .influencer img {
-    width: 16rem;
-    height: 16rem;
+    margin: 4rem 0 0 0;
   }
 }
 
 @media (max-width: 575px) {
   .section-4 {
-    margin: 15rem 0;
+    margin: 25rem 0 0 0;
   }
 
-  .influencers {
-    flex-wrap: nowrap;
-    flex-direction: column;
-  }
-
-  .influencer img {
-    width: 10rem;
-    height: 10rem;
-  }
+  
 }
 /* end of section 4 ---------------------------------- */
 /* footer  */
 
 footer {
   z-index: 3;
-  margin: 0;
   background: var(--footer);
   padding: 2rem;
   color: var(--text);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  margin-top: 5rem;
 }
+
+.footer-1 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 footer p {
   text-align: center;
   margin-bottom: 1rem;
 }
-footer .logo {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
 
 .icons {
+  text-align: center;
   color: var(--text);
 }
 
@@ -866,6 +758,13 @@ footer .logo {
   flex-wrap: wrap;
 }
 
+.footer-separator {
+  background-color: var(--text);
+  width: 80%;
+  height: 2px;
+  margin: 2rem auto;
+}
+
 footer h2 {
   margin-bottom: 1rem;
 }
@@ -883,8 +782,7 @@ footer .contacts img {
 }
 
 .credits {
-  display: flex;
-  justify-content: space-around;
+  text-align: center;
   font-size: clamp(0.5rem, 2vw, 0.8rem);
 }
 
@@ -1070,11 +968,14 @@ iframe {
   margin-bottom: 2rem;
   flex-wrap: wrap;
   font-size: clamp(0.5rem, 2vw, 1rem);
+  color: var(--text);
 }
 
 .featured-articles div {
   max-width: clamp(100px, 60vw, 350px);
   margin: 0 auto;
+  position: relative;
+  padding-bottom: 5rem;
 }
 
 .featured-articles img {
@@ -1087,6 +988,9 @@ iframe {
 .btn {
   border-bottom: 2px solid var(--accent);
   font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .tiny-text {
