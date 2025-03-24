@@ -445,12 +445,12 @@ nav li {
 }
 
 .exercise-message h2 {
-  font-size: clamp(1.5rem, 2vw, 2.3rem);
+  font-size: clamp(1.5rem, 5vw, 2rem);
   text-align: center;
 }
 
 .exercise-message p {
-  font-size: clamp(0.8rem, 2vw, 1.3rem);
+  font-size: clamp(1rem, 2.5vw, 1rem);
   text-align: center;
 }
 
@@ -461,6 +461,7 @@ nav li {
   text-align: center;
   flex-wrap: wrap;
   gap: 0.5rem;
+  flex: 1 0 clamp(250px, 30%, 350px);
 }
 
 .muscles div {
@@ -470,8 +471,8 @@ nav li {
 .muscles a img {
   flex-shrink: 0;
   display: flex;
-  width: clamp(10rem, 20vw, 20rem);
-  height: clamp(7rem, 20vw, 10rem);
+  width: clamp(15rem, 20vw, 20rem);
+  height: clamp(9rem, 20vw, 10rem);
   transition: 0.2s ease-in;
   border-radius: 1rem;
   margin: 0 1rem;
