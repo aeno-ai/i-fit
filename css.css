@@ -777,6 +777,13 @@ footer .contacts img {
   footer p {
     font-size: 0.6rem;
   }
+
+  footer .contacts img{
+    display: none;
+    
+  }
+  
+
 }
 
 /* animation */

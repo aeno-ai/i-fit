@@ -16,7 +16,7 @@
     />
     <style>
       .about-1 {
-        display: flex;
+        display:flex;
         margin: 0;
         padding: 0;
         height: 100vh;
@@ -32,7 +32,7 @@
       }
 
       .about-1 .bg {
-        flex-wrap: wrap;
+        
         animation: appearFade 1s ease-in-out;
       }
 
@@ -47,10 +47,16 @@
       .bg {
         justify-content: space-evenly;
         display: flex;
+        align-items: center;
+        flex-wrap: wrap;
       }
 
       .about-1 img {
         animation: fade-appear;
+      }
+
+      .about-1 .about-message {
+        max-width: 50%;
       }
 
       .break-line {
@@ -67,7 +73,10 @@
         height: 100vh;
         color: var(--text);
         font-size: clamp(0.4rem, 2vw, 1.2rem);
+
       }
+
+      
 
       .tools h2 {
         margin: 1rem 0;
@@ -386,7 +395,7 @@
       <div class="shapes shape-9"></div>
 
       <div class="bg">
-        <div class="welcome-message">
+        <div class="about-message">
           <h1>Who we are</h1>
           <div class="break-line"></div>
           <p>
