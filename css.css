@@ -691,7 +691,7 @@ footer {
   background: var(--footer);
   padding: 2rem;
   color: var(--text);
-  margin-top: 5rem;
+  margin-top: 0rem;
   width: 100%;
   height: auto;
 }
@@ -786,13 +786,7 @@ footer .contacts img {
 
 }
 
-/* animation */
 
-.sections {
-  animation: appear 1.5s linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 25%;
-}
 /* appear kapag mag scroll */
 @keyframes appear {
   from {
