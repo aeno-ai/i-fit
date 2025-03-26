@@ -370,7 +370,7 @@ nav li {
 
 
 .welcome-message {
-  margin-left: 2rem;
+  text-align: center;
   max-width: 40%;
   margin: 0 auto;
   
@@ -414,6 +414,15 @@ nav li {
 }
 
 @media (max-width: 960px) {
+
+  .welcome-message {
+    
+    max-width: 80%;
+    margin: 0 auto;
+    
+  }
+
+
   .shapes {
     display: none;
   }
