@@ -786,7 +786,6 @@ footer .contacts img {
 
 }
 
-
 /* appear kapag mag scroll */
 @keyframes appear {
   from {
@@ -851,12 +850,12 @@ footer .contacts img {
 }
 
 iframe {
-  width: clamp(100px, 20vw, 400px);
-  height: clamp(50px, 20vw, 200px);
+  width: clamp(250px, 20vw, 400px);
+  height: clamp(150px, 20vw, 200px);
 }
 
 .muscle-page {
-  font-size: clamp(0.5rem, 2vw, 1.2rem);
+  font-size: clamp(.8rem, 2vw, 1.2rem);
   width: 100%;
   display: flex;
   justify-content: center;
@@ -865,7 +864,7 @@ iframe {
   color: var(--text);
   flex-direction: column;
   gap: 3rem;
-  height: 100vh;
+  margin: 4rem 0;
 }
 
 .muscle-page img {
@@ -886,6 +885,8 @@ iframe {
   border-top: 0.5rem solid var(--accent);
   z-index: 2;
   padding-bottom: 1rem;
+  flex-wrap: wrap;
+  
 }
 
 .exercises-cards {
