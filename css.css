@@ -642,6 +642,7 @@ nav li {
   padding: 0;
   width: 100%;
   color: var(--text);
+  margin: 3rem 0;
 }
 
 .influencers-message {
@@ -653,7 +654,7 @@ nav li {
 }
 
 .influencers-message p {
-  font-size: clamp(0.5rem, 2.5vw, 1rem);
+  font-size: clamp(0.7rem, 2.5vw, 1rem);
 }
 
 .influencers {
@@ -682,6 +683,8 @@ nav li {
 
 .influencer-names {
   text-align: center;
+  font-size: clamp(.5rem, 2.5vw, 1rem);
+
 }
 
 @media (max-width: 1240px) {
