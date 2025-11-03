@@ -8,7 +8,7 @@
 
 ## What it is
 
-A clean, responsive fitness website that teaches exercises for different muscle groups, provides basic nutrition guidance, and includes simple interactive tools (BMI/BMR calculators). Designed to be user-friendly and accessible.
+A clean, responsive fitness website that teaches exercises for different muscle groups, provides basic nutrition guidance, and includes simple a interactive tool BMI calculator. Designed to be user-friendly and accessible.
 
 ---
 
